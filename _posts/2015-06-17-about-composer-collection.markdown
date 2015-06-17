@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "composer使用整理"
+date:   2015-06-17 21:13:55
+categories: composer
+---
+
 composer 使用整理
 
 中文文档： http://www.phpcomposer.com/  
