@@ -1,6 +1,10 @@
-Title: 关于tornado中数据库操作的那些事
-Date: 2014-06-24 23:09:00
-Tags: Tornado, SQLAlchemy, storm, ORM
+---
+layout: post
+title: 关于tornado中数据库操作的那些事
+date:   2014-06-24 23:09:00
+category: note
+tags: Tornado, SQLAlchemy, storm, ORM
+---
 
 
 最近一直在用tornado尝试写个后台，从开始到现在一直在用 [SQLAlchemy](http://www.sqlalchemy.org/), 用的时候一直磕磕绊绊，中间也想着放弃来着，后来想想再坚持一下吧。当然也想过其他db客户端, 如 [torndb](https://github.com/bdarnell/torndb), 一个非常简单的orm类 因为这个简单易用，是直接写纯SQL的方式，容易上手，但想想是不太简单了点，所以也一直没用。  
