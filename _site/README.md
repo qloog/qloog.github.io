@@ -1,1 +1,0 @@
-# qloog.github.io
