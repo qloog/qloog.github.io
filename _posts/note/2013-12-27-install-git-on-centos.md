@@ -1,6 +1,10 @@
-Title: 在CentOS上安装Git
-Date: 2013-12-27 16:14:16
-Tags: CentOS, Git
+---
+layout: post
+title: 在CentOS上安装Git
+date: 2013-12-27 16:14:16
+category: note
+tags: CentOS Git
+---
 
 ## 在CentOS上安装Git
 

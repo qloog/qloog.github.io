@@ -1,6 +1,10 @@
-Title: 推荐一款国内PHP开源框架--Yaf(基于C语言编写、PHP扩展形式)
-Date: 2012-04-03 13:08:19
-Tags: PHP, 框架, PHP扩展
+---
+layout: post
+title: 推荐一款国内PHP开源框架--Yaf(基于C语言编写、PHP扩展形式)
+date: 2012-04-03 13:08:19
+category: note
+tags: PHP 框架 PHP扩展
+---
 
 ## 关于：
 
