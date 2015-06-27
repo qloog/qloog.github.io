@@ -28,8 +28,17 @@ disqus_shortname: lnmp100
 
 
 # Build settings
+permalink: /:year/:month/:day/:title.html
 markdown: kramdown
+pygments: true
+kramdown:
+  input: GFM
+
 sass:
   style: compressed
 gems:
   - jekyll-sitemap
+
+# avatar头像及Favicon
+avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
+favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico  
