@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 关于tornado中数据库操作的那些事
-date:   2014-06-24 23:09:00
-category: note
+date:  2014-06-24 23:09:00
+category: 技术
 tags: Tornado SQLAlchemy storm ORM
 ---
 

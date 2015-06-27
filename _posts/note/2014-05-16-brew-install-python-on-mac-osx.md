@@ -2,7 +2,7 @@
 layout: post
 title: Mac OSX下brew安装python 报错
 date:  2014-05-16 14:13
-category: note
+category: 技术
 tags: brew, Mac OSX, python
 ---
 

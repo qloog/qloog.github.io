@@ -2,7 +2,7 @@
 layout: post
 title: MySQL主从服务器的一些技巧
 date: 2012-05-20 22:15:00
-category: note
+category: 技术
 tags: MySQL
 ---
 

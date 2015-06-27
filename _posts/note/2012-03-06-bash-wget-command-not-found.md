@@ -2,7 +2,7 @@
 layout: post
 title: "-bash: wget: command not found的两种解决方法"
 date: 2012-03-06 14:56:59
-category: note
+category: 技术
 tags: wget bash
 ---
 

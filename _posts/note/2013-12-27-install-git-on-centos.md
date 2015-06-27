@@ -2,7 +2,7 @@
 layout: post
 title: 在CentOS上安装Git
 date: 2013-12-27 16:14:16
-category: note
+category: 技术
 tags: CentOS Git
 ---
 

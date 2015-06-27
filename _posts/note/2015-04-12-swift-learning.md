@@ -2,7 +2,7 @@
 layout: post
 title: swift基础教程学习笔记--快速入门篇
 date:  2015-04-12 23:09:00
-category: note
+category: 技术
 tags: swift
 ---
 

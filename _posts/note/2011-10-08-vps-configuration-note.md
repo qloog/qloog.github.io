@@ -1,7 +1,7 @@
 ---
 layout: post
 title: vps配置笔记
-category: note
+category: 技术
 tags: VPS
 ---
 

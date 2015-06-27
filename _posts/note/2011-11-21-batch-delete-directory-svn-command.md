@@ -2,7 +2,7 @@
 layout: post
 title: Linux下批量删除.svn目录的命令
 date:  2011-11-21 14:04:37
-category: note
+category: 技术
 tags: svn
 ---
 

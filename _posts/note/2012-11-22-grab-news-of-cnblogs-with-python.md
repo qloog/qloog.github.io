@@ -2,7 +2,7 @@
 layout: post
 title: Python采集博客园的新闻资讯
 date: 2012-11-22 20:58:52
-category: note
+category: 技术
 tags: Python 采集
 ---
 
