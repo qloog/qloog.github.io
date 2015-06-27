@@ -13,6 +13,6 @@ tags: svn
 
 可以查看到隐藏文件 .svn
 
-	ind . -name .svn -type d -exec rm -fr {} \;
+	find . -name .svn -type d -exec rm -fr {} \;
 
 通过执行以上命令后，.svn的所有文件都被删除。 这样将v1分支下的目录拷贝到v2分支下以后，提交v2下的文件就不会有问题存在了。
