@@ -1,6 +1,10 @@
-Title: Mac OS X 上好用的 Markdown 编辑器 - Mou
-Date: 2014-02-27 19:07:19
-Tags: markdown, Mou
+---
+layout: post
+title: Mac OS X 上好用的 Markdown 编辑器 - Mou
+date: 2014-02-27 19:07:19
+category: note
+tags: markdown Mou
+---
 
 ## Mac OS X 上好用的 Markdown 编辑器 - Mou
 

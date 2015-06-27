@@ -1,6 +1,11 @@
-Title: CentOS下Apache反向代理的配置
-Date: 2012-03-08 14:22:01
-Tags: Apache, CentOS
+
+---
+layout:post
+title: CentOS下Apache反向代理的配置
+date: 2012-03-08 14:22:01
+category: note
+tags: Apache CentOS
+---
 
 
 最近要弄个Aapche反向代理，来让子频道访问另外一台机器上的数据，现整理如下。   1、环境 操作系统：CentOS 5.4 WEB Server: Apache2.2  2、必须安装的apache模块 

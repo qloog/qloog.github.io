@@ -1,6 +1,10 @@
-Title: MySQL主从服务器的一些技巧
-Date: 2012-05-20 22:15:00
-Tags: MySQL
+---
+layout: post
+title: MySQL主从服务器的一些技巧
+date: 2012-05-20 22:15:00
+category: note
+tags: MySQL
+---
 
 ## 主从服务器表类型的选择
 一般的共识是主服务器使用`innodb`，事务，行锁等功能是myisam所没有的，对修改操作而言，它更高效；从服务器使用myisam，全文检索功能是`innodb`所没有的，对查询操作而言，它更高效。这样就可以各尽其能。

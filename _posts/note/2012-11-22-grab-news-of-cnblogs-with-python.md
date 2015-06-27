@@ -1,6 +1,10 @@
-Title: Python采集博客园的新闻资讯
-Date: 2012-11-22 20:58:52
-Tags: Python, 采集
+---
+layout: post
+title: Python采集博客园的新闻资讯
+date: 2012-11-22 20:58:52
+category: note
+tags: Python 采集
+---
 
 最近想采集点新闻放到自己原本空空的表里，听说是Python挺方便，所以就用Python来采集，顺便练练手。 
 

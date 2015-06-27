@@ -1,6 +1,10 @@
-Title: PHP中的生成XML文件的4种方法
-Date: 2012-03-27 23:06:23
-Tags: PHP, XML
+---
+layout:post
+title: PHP中的生成XML文件的4种方法
+date: 2012-03-27 23:06:23
+category: note
+tags: PHP XML
+---
 
 生成xml四种方法，总有自己满意的一种。 
     
@@ -18,9 +22,10 @@ Tags: PHP, XML
         </item>
     </article> 
     
+
 ## 直接生成字符串
-    方法1：使用纯粹的PHP代码生成字符串，并把这个字符串写入一个以XML为后缀的文件。这是最原始的生成XML的方法，不过有效！
-    PHP代码如下：
+方法1：使用纯粹的PHP代码生成字符串，并把这个字符串写入一个以XML为后缀的文件。这是最原始的生成XML的方法，不过有效！
+PHP代码如下：
     
     <?PHP
     $data_array = array(
@@ -62,6 +67,7 @@ Tags: PHP, XML
     
     ?> 
     
+
 ## DomDocument
     方法2：使用DomDocument生成XML文件
     创建节点使用createElement方法，
@@ -135,6 +141,7 @@ Tags: PHP, XML
     }   //  end function
     ?> 
     
+
 ## XMLWriter
     方法3：使用XMLWriter类创建XML文件
     此方法在PHP 5.1.2后有效
@@ -203,6 +210,7 @@ Tags: PHP, XML
     $xml->flush();
     ?> 
     
+
 ## SimpleXML
     方法4：使用SimpleXML创建XML文档
     

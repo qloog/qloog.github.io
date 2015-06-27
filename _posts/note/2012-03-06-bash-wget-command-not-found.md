@@ -1,6 +1,10 @@
-Title: -bash: wget: command not found的两种解决方法
-Date: 2012-03-06 14:56:59
-Tags: wget, bash
+---
+layout: post
+title: -bash: wget: command not found的两种解决方法
+date: 2012-03-06 14:56:59
+category: note
+tags: wget bash
+---
 
 
  -bash: wget: command not found的两种解决方法
