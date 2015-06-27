@@ -1,6 +1,10 @@
-Title: PHP隐藏IP后一位或后两位的解决方法
-Date: 2012-02-23 22:55:15
-Tags: PHP, IP
+---
+layout: post
+title: PHP隐藏IP后一位或后两位的解决方法
+date: 2012-02-23 22:55:15
+category: 代码
+tags: PHP IP
+---
 
 一般在评论系统中会经常用到展示IP地址，但为了不全部展示IP地址，所以要对IP地址做处理：隐藏最后一位或最后两位。  
 
