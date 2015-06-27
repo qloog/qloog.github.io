@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用 PHP 写出五种方式来获取文件后缀名称
-date: 2012/03/29 23:26:33
+date: 2012-03-29 23:26:33
 category: 代码
 tags: PHP 后缀
 ---
