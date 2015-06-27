@@ -1,5 +1,5 @@
 ---
-layout:post
+layout: post
 title: PHP中的生成XML文件的4种方法
 date: 2012-03-27 23:06:23
 category: note

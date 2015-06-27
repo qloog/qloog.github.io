@@ -1,6 +1,6 @@
 
 ---
-layout:post
+layout: post
 title: CentOS下Apache反向代理的配置
 date: 2012-03-08 14:22:01
 category: note
