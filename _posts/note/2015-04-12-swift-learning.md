@@ -1,3 +1,12 @@
+---
+layout: post
+title: swift基础教程学习笔记--快速入门篇
+date:  2015-04-12 23:09:00
+category: note
+tags: swift
+---
+
+
 ## swift基础教程学习笔记--快速入门篇  
 
 swift是一门强类型语言，所以当不同类型的变量在处理时如果不对应就会报错。  
@@ -45,138 +54,138 @@ see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swif
 
 
 ##常量和变量
-var a = 1
-a = 10
-var b = 2
+	var a = 1
+	a = 10
+	var b = 2
 
-//定义后不可修改
-let c = a+b  
+	//定义后不可修改
+	let c = a+b  
 
-pirntln(c)
+	pirntln(c)
 
 ##类型
-//单引号的字符串会报错  
-var str="Hello"  
+	//单引号的字符串会报错  
+	var str="Hello"  
 
-//手动指明类型  
-var s:String = "world"  
-var i:Int = 100  
-var words:String = "test"  
-//可以不加，会自动做类型推断  
+	//手动指明类型  
+	var s:String = "world"  
+	var i:Int = 100  
+	var words:String = "test"  
+	//可以不加，会自动做类型推断  
 
-println(str)
+	println(str)
 
 ## 字符串连接操作
-var i = 100  
-var str = "Hello"  
-str = str + "jikexuanyuan"  
-//字符串加数字,会报错，需要做类型转换；或者用下面的操作：  
-str = "\(str), abcdef, \(100)"  
-str = "\(str), abcdef, \(i)"  
+	var i = 100  
+	var str = "Hello"  
+	str = str + "jikexuanyuan"  
+	//字符串加数字,会报错，需要做类型转换；或者用下面的操作：  
+	str = "\(str), abcdef, \(100)"  
+	str = "\(str), abcdef, \(i)"  
 
-//定义空字符串, 两个都是空，而且是相等的  
-var emptyString = ""  
-var anthorEmptyString = String()
+	//定义空字符串, 两个都是空，而且是相等的  
+	var emptyString = ""  
+	var anthorEmptyString = String()
 
-println(str)
+	println(str)
 
-//判断字符串是否为空
-if emptyString.isEmpty() {
-	println("Nothing to see here")
-}
+	//判断字符串是否为空
+	if emptyString.isEmpty() {
+		println("Nothing to see here")
+	}
 
-//字符串追加
-var welcome = "Hello"  
-let mark = "!"  
-welcome.append(mark) //Hello!
+	//字符串追加
+	var welcome = "Hello"  
+	let mark = "!"  
+	welcome.append(mark) //Hello!
 
 ##数组
-var arr = ["Hello", "jikexueyuan", 100, 2.3]
-println(arr)
+	var arr = ["Hello", "jikexueyuan", 100, 2.3]
+	println(arr)
 
-//空数组  
-var arr1 = []  
-//特定类型的空数组  
-var arr2 = [String]()
+	//空数组  
+	var arr1 = []  
+	//特定类型的空数组  
+	var arr2 = [String]()
 
 ##字典
-var dict = ["name":"jikexueyuan", "age":"16"]
-//动态赋值
-dict["sex"] = "Female"
-println(dict)
-//取特定值
-println(dict["name"])
+	var dict = ["name":"jikexueyuan", "age":"16"]
+	//动态赋值
+	dict["sex"] = "Female"
+	println(dict)
+	//取特定值
+	println(dict["name"])
 
-//类型要对应  
-var airports: [String: Int] = ["YYZ": 111, "DUB": 222]  
-var airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
-//也可以不定义类型  
-var airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+	//类型要对应  
+	var airports: [String: Int] = ["YYZ": 111, "DUB": 222]  
+	var airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+	//也可以不定义类型  
+	var airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
 
 ##循环
-1.索引
-var arr = [String]()
+	1.索引
+	var arr = [String]()
 
-for index in 0...100{
-	arr.append("Item\(index)")
-}
-println(arr)
+	for index in 0...100{
+		arr.append("Item\(index)")
+	}
+	println(arr)
 
-2.arr
-for value in arr{
-	println(value)
-}
+	2.arr
+	for value in arr{
+		println(value)
+	}
 
-3. while
-var i = 0
-while i<arr.count {
-	println(arr[i])
-	i++
-}
+	3. while
+	var i = 0
+	while i<arr.count {
+		println(arr[i])
+		i++
+	}
 
-4. 字典
-var dict = ["name":"jiekexueyuan", "age":16]
-for (key, value) in dict{
-	println("\(key),\(value)")
-}
+	4. 字典
+	var dict = ["name":"jiekexueyuan", "age":16]
+	for (key, value) in dict{
+		println("\(key),\(value)")
+	}
 
 ## 流程控制
-for index in 0..100{
-	if index%2==0 {
-		println(index)
+	for index in 0..100{
+		if index%2==0 {
+			println(index)
+		}
 	}
-}
 
-//带问号的是可选变量
-var myName:String?="jikexueyuan"
-//空赋值
-myName = nil 	
+	//带问号的是可选变量
+	var myName:String?="jikexueyuan"
+	//空赋值
+	myName = nil 	
 
-if let name=myName {
-	println("Hello \(name)")
-}
+	if let name=myName {
+		println("Hello \(name)")
+	}
 
 ##函数
-//需要指名类型，否则会报错
-func sayHello(name:String){
-	println("Hello \(name)")
-}
+	//需要指名类型，否则会报错
+	func sayHello(name:String){
+		println("Hello \(name)")
+	}
 
-syaHello("jikexeuyuan")
+	syaHello("jikexeuyuan")
 
-//当返回多个值的时候，需要对每一个做类型定义
+	//当返回多个值的时候，需要对每一个做类型定义
 
-func getNums()->(Int, Int){
-	return (2,3)
-}
+	func getNums()->(Int, Int){
+		return (2,3)
+	}
 
-//使用
-let (a, b) = getNums()
-println(a)
+	//使用
+	let (a, b) = getNums()
+	println(a)
 
-//函数当变量使用, 同时函数内也可以再写函数（闭包）
-var fun = sayHello()
-fun("shangsan")
+	//函数当变量使用, 同时函数内也可以再写函数（闭包）
+	var fun = sayHello()
+	fun("shangsan")
 
 
 ##面向对象
