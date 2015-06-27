@@ -1,6 +1,11 @@
-Title: Mac OSX下brew安装python 报错
-Date: 2014-05-16 14:13
-Tags: brew, Mac OSX, python
+---
+layout: post
+title: Mac OSX下brew安装python 报错
+date:  2014-05-16 14:13
+category: note
+tags: brew, Mac OSX, python
+---
+
 
 准备在Mac OSX 下通过brew安装pip, 以方便本地python开发。安装过程中遇到了一些问题，整理如下：
 

@@ -1,6 +1,11 @@
-Title: Linux下批量删除.svn目录的命令
-Date: 2011-11-21 14:04:37
-Tags: svn
+---
+layout: post
+title: Linux下批量删除.svn目录的命令
+date:  2011-11-21 14:04:37
+category: note
+tags: svn
+---
+
 
 在Linux系统下, 可以用一个命令很容易批量删除.svn的文件夹。 通过
 
