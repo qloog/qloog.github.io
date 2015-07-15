@@ -6,33 +6,35 @@ tags: VPS
 ---
 
 
+## 基本配置
 
  1. 更改系统时间为北京时间：
 
-	cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+		cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
  2. 修改系统默认编码（设置 loacle 为中文环境）
 	方法一：
 
-	LANG=zh_CN.utf8
-	LANGUAGE=zh_CN:en
-	LC_CTYPE=”zh_CN.utf8″
-	LC_NUMERIC=”zh_CN.utf8″
-	LC_TIME=”zh_CN.utf8″
-	LC_COLLATE=”zh_CN.utf8″
-	LC_MONETARY=”zh_CN.utf8″
-	LC_MESSAGES=”zh_CN.utf8″
-	LC_PAPER=”zh_CN.utf8″
-	LC_NAME=”zh_CN.utf8″
-	LC_ADDRESS=”zh_CN.utf8″
-	LC_TELEPHONE=”zh_CN.utf8″
-	LC_MEASUREMENT=”zh_CN.utf8″
-	LC_IDENTIFICATION=”zh_CN.utf8″
-	LC_ALL=
+		LANG=zh_CN.utf8
+		LANGUAGE=zh_CN:en
+		LC_CTYPE=”zh_CN.utf8″
+		LC_NUMERIC=”zh_CN.utf8″
+		LC_TIME=”zh_CN.utf8″
+		LC_COLLATE=”zh_CN.utf8″
+		LC_MONETARY=”zh_CN.utf8″
+		LC_MESSAGES=”zh_CN.utf8″
+		LC_PAPER=”zh_CN.utf8″
+		LC_NAME=”zh_CN.utf8″
+		LC_ADDRESS=”zh_CN.utf8″
+		LC_TELEPHONE=”zh_CN.utf8″
+		LC_MEASUREMENT=”zh_CN.utf8″
+		LC_IDENTIFICATION=”zh_CN.utf8″
+		LC_ALL=
 
 	方法二：
-	vim /etc/sysconfig/i18n
-	加入：LANG=”zh_CN.UTF-8″
+	
+		vim /etc/sysconfig/i18n
+		加入：LANG=”zh_CN.UTF-8″
 
  3. 安装VIM编辑器
 	安装：
@@ -57,25 +59,23 @@ tags: VPS
 		  cat /proc/version
 		  uname -a
 		  cat /etc/issue
+		  
+		  
+		  
+## 问题汇总
 
- 6. 最土团购系统伪静态规则
+  1. 刚登录时如果一下提示:  
+  
+		Last login: Tue Jul 14 22:13:13 2015 from 114.111.167.156
+		
+		Welcome to aliyun Elastic Compute Service!
+		
+		-bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+		
+	解决方法是：
+	
+	添加`LC_CTYPE="en_US.UTF-8"` 到 `/etc/sysconfig/i18n` 文件中， 重新登录问题解决。			  
+		  
+ 		  
 
-最土团apache伪静态规则
-
-	RewriteCond %{QUERY_STRING} ^(.*)$
-	RewriteRule ^(\w+)/(deals|seconds|goods|partners)$ rewrite.php
-	RewriteRule ^(team|partner)/(\d+).html$ rewrite.php
-	RewriteRule ^(\w+)$ rewrite.php
-
-最土团iis伪静态规则
-
-	[ISAPI_Rewrite]
-	RewriteRule (.*)/([a-zA-Z]+)/(deals|seconds|goods|partners)$ $1/rewrite.php
-	RewriteRule (.*)/(team|partner)/([0-9]+)\.html$ $1/rewrite.php
-	RewriteRule (.*)/([a-zA-Z]+)$ /rewrite.php
-
-最土团nginx伪静态规则
-
-	rewrite ^([^\.]*)/(\w+)/(deals|seconds|goods|partners)$ $1/rewrite.php last;
-	rewrite ^([^\.]*)/(team|partner)/(\d+).html$ $1/rewrite.php last;
-	rewrite ^([^\.]*)/([\/\w]*[\w])$ $1/rewrite.php last;
+ 
