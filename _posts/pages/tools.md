@@ -1,66 +1,29 @@
-Title: Tools
-Date: 2014-05-29 14:01
+---
+layout: post
+title: 常用工具类整理
+category: 工具
+date: 2014-05-09
+tags: git
+---
 
-Tools and Stack
+> 以下工具都是基于MAC 下的
 
-## 硬件
+## 效率类
 
-    Macbook + 扩展屏
+ * [Alfred](https://www.macupdate.com/app/mac/34344/alfred) Top#1，不解释
+ * [OmniGraffle](http://www.omnigroup.com/omnigraffle) 专业绘图制表工具，推荐v6.0
+ * [PhotoDesk](http://www.photodesk-app.com/)	Instagram 客户端，功能齐全
+ * [Parallels Desktop](http://www.parallels.com/products/desktop/) 虚拟机
+ *  zsh	bash的一种
 
-    iPhone / iPad
+## 开发类
 
-
-## 编辑器
-
-### coding
-
-    zsh(command line)/bash(shell script)
-    vim(linux/mac)
-
-### markdown
-
-    vim(linux)
-    Mou(mac)
-
-## 浏览器
-
-    Chrome
-
-    goagent
-
-## 云
-
-    EverNote 笔记
-
-    360云盘
-
-## music
-
-    百度
-    虾米音乐
-
-## 语言
-
-    PHP
-    Python(在学)
-    Golang(待学)
-
-    html/css/js
-    jQuery
-    AngularJs(待学)
-
-## 部署
-
-    fabric + rsync
-    gunicorn
-    gearman
-
-## 命令行工具
-
-    sshpass
-
-
-
+ * [Dash](http://kapeli.com/dash) 全语言文档手册速查
+ * [Charles](http://www.charlesproxy.com/)	抓包代理调试工具、类 Fiddler
+ * [PHPStrom](https://www.jetbrains.com/phpstorm/)  便捷的IDE工具
+ * [Sublime Text](http://www.sublimetext.com/)
+ * Mou(mac)  Markdown 编辑器
+ * Sequel Pro MySQL 管理工具
 
 
 
