@@ -33,6 +33,7 @@ tags: 教程
 
 * [http://www.insp.top/learn-laravel-container](http://www.insp.top/learn-laravel-container)
 * [http://heera.it/](http://heera.it/)
+* [LARAVEL – 5.1.X ACL USING MIDDLEWARE](http://heera.it/laravel-5-1-x-acl-middleware)
 
 #### 常用的vender
 
