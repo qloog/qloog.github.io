@@ -77,9 +77,7 @@ tags: 教程
  3. [Git 参考手册](http://gitref.org/zh/index.html)
  4. [图解Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
  5. [Git Book](http://git-scm.com/book/zh/v1)
- 5. 图形客户端
+ 5. 图形客户端 [SourceTree](https://www.sourcetreeapp.com/) 
  
- 	* [SourceTree](https://www.sourcetreeapp.com/) 
- 
-		> 支持Windows、Mac;   
-		> 支持 [Bitbucket](https://bitbucket.org/)、[Atlassian Stash](http://www.atlassian.com/software/stash/)、[Github](https://github.com/)
+	> 支持Windows、Mac;   
+	> 支持 [Bitbucket](https://bitbucket.org/)、[Atlassian Stash](http://www.atlassian.com/software/stash/)、[Github](https://github.com/)
