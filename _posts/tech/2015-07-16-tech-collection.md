@@ -79,5 +79,6 @@ tags: 教程
  5. 图形客户端
  
  	* [SourceTree](https://www.sourcetreeapp.com/) 
- 	> 支持Windows、Mac;   
- 	> 支持 [Bitbucket](https://bitbucket.org/)、[Atlassian Stash](http://www.atlassian.com/software/stash/)、[Github](https://github.com/)
+ 
+		> 支持Windows、Mac;   
+		> 支持 [Bitbucket](https://bitbucket.org/)、[Atlassian Stash](http://www.atlassian.com/software/stash/)、[Github](https://github.com/)
