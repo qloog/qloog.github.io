@@ -9,18 +9,30 @@ tags: 教程
 > 为了方便自己理解和查阅，整理了下常用的资料：
 
 
-## PHP
+## 1、PHP
 
 
-### Laravel
+### 1.Laravel
 
-#### 官网文档
+#### 官网: [http://laravel.com/](http://laravel.com/)
 
-#### 中文文档
+#### 文档
+
+* [中文文档5.1](http://laravel-china.org/docs/5.1)
+* [官方文档](http://laravel.com/docs/5.1)
 
 #### 社区
 
+* [PHPHub](https://phphub.org/)
+
+#### 视频
+
+* [laracasts](https://laracasts.com)
+
 #### 与Laravel有关的博客
+
+* [http://www.insp.top/learn-laravel-container](http://www.insp.top/learn-laravel-container)
+* [http://heera.it/](http://heera.it/)
 
 #### 常用的vender
 
@@ -32,15 +44,15 @@ tags: 教程
 * [Repository](https://github.com/Bosnadev/Repositories)
 * [guzzlehttp/guzzle](https://packagist.org/packages/guzzlehttp/guzzle)
 
-### Composer
+### 2. Composer
 
 #### 官网
 
-### 
+#### 代理 
 
  
 
-## JavaScript
+## 2、JavaScript
 
 1. [JavaScript 标准参考教程（alpha）](http://javascript.ruanyifeng.com/)
 
@@ -57,7 +69,7 @@ tags: 教程
  4. [学用 JavaScript 设计模式](http://wiki.jikexueyuan.com/project/javascript-design-patterns/)
  
  
-## Git
+## 3、Git
  
  1. [史上最浅显易懂的Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
  2. [Git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)	助你入门 git 的简明指南，木有高深内容 :)
@@ -65,6 +77,7 @@ tags: 教程
  4. [图解Git](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
  5. [Git Book](http://git-scm.com/book/zh/v1)
  5. 图形客户端
+ 
  	* [SourceTree](https://www.sourcetreeapp.com/) 
  	> 支持Windows、Mac;   
  	> 支持 [Bitbucket](https://bitbucket.org/)、[Atlassian Stash](http://www.atlassian.com/software/stash/)、[Github](https://github.com/)
