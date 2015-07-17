@@ -9,6 +9,37 @@ tags: 教程
 > 为了方便自己理解和查阅，整理了下常用的资料：
 
 
+## PHP
+
+
+### Laravel
+
+#### 官网文档
+
+#### 中文文档
+
+#### 社区
+
+#### 与Laravel有关的博客
+
+#### 常用的vender
+
+* [wechar-php-sdk](https://github.com/overtrue/wechat)
+* [Excel](https://github.com/Maatwebsite/Laravel-Excel)
+* [Image](https://github.com/Intervention/image/)
+* [User Agent](https://github.com/jenssegers/laravel-agent)
+* [Laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
+* [Repository](https://github.com/Bosnadev/Repositories)
+* [guzzlehttp/guzzle](https://packagist.org/packages/guzzlehttp/guzzle)
+
+### Composer
+
+#### 官网
+
+### 
+
+ 
+
 ## JavaScript
 
 1. [JavaScript 标准参考教程（alpha）](http://javascript.ruanyifeng.com/)
