@@ -207,6 +207,9 @@ PHP在mac下默认安装了，但是不好控制版本，利用brew可以再mac�
 	brew install php55-xdebug
 	brew install php55-mcrypt    #Laravel 框架依赖此扩展
 	brew install php55-xhprof    #php性能分析工具
+	brew install php55-gearman 
+	brew install php55-msgpack 
+	brew install php55-phalcon
 	
 那么安装后如何对php进行管理呢(这里主要是重启操作)，可以制作一个脚本来管理（/usr/local/etc/php/fpm-restart）：
 
@@ -261,6 +264,59 @@ mac不自带mysql，这里需要重新安装，方法依然很简单
 	[mysqld]
 	general-log
 	general_log_file = /usr/local/var/log/mysqld.log
+	
+## Memcache
+
+	brew install memcached
+	
+启动/停止指令
+
+	memcached -d
+	killall memcached
+	
+加入开机启动
+
+	cp /usr/local/Cellar/memcached/1.4.20/homebrew.mxcl.memcached.plist ~/Library/LaunchAgents/
+	
+## Redis
+
+	brew install redis
+	
+Redis默认配置文件不允许以Deamon方式运行，因此需要先修改配置文件
+
+	vim /usr/local/etc/redis.conf
+	
+将daemonize修改为yes，然后载入配置文件即可实现后台进程启动
+
+	redis-server /usr/local/etc/redis.conf
+	
+加入开机启动
+
+	cp /usr/local/Cellar/redis/2.8.19/homebrew.mxcl.redis.plist ~/Library/LaunchAgents/ 
+	
+## 设置别名
+
+最后可以对所有服务的启动停止设置别名方便操作
+
+	vim ~/.bash_profile
+	
+加入
+
+	alias nginx.start='launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist'
+	alias nginx.stop='launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist'
+	alias nginx.restart='nginx.stop && nginx.start'
+	alias php-fpm.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php55.plist"
+	alias php-fpm.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php55.plist"
+	alias php-fpm.restart='php-fpm.stop && php-fpm.start'
+	alias mysql.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+	alias mysql.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+	alias mysql.restart='mysql.stop && mysql.start'
+	alias redis.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
+	alias redis.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.redis.plist"
+	alias redis.restart='redis.stop && redis.start'
+	alias memcached.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist"
+	alias memcached.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist"
+	alias memcached.restart='memcached.stop && memcached.start'	
 	
 ## MongoDB
 
