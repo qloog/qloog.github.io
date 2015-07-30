@@ -47,8 +47,33 @@ tags: Laravel
 wehchat 对应 app/config/wechat.php 文件
 
 
+## 碰到的问题
+
+### 1、无法创建 controller
+
+	php artisan make:controller UserController
+	
+提示：
+	
+	[RuntimeException]
+	Unable to detect application namespace.
+	
+解决步骤：
+
+- 看看`composer.json` 是否有语法错误	
+- 若无，检查`composer.json`里配置的,看是否丢失了命名空间`psr-4`
 
 
-更多用法参考：  [http://cheats.jesse-obrien.ca/](http://cheats.jesse-obrien.ca/)
+参考：[http://stackoverflow.com/questions/29956010/error-running-makerequest-on-laravel-5](http://stackoverflow.com/questions/29956010/error-running-makerequest-on-laravel-5)
+
+	
+	
+
+
+
+
+
+## 参考：
+ - [http://cheats.jesse-obrien.ca/](http://cheats.jesse-obrien.ca/)
 	
 		

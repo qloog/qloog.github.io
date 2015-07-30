@@ -49,6 +49,7 @@ tags: 教程
 * [guzzlehttp/guzzle](https://packagist.org/packages/guzzlehttp/guzzle)
 * [验证码](https://github.com/mewebstudio/captcha)
 * [laravel 5 Markdown](https://github.com/yccphp/laravel-5-markdown-editor)
+* [evaOauth](http://avnpc.com/pages/evaoauth)
 
 ### 2. Composer
 
