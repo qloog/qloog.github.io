@@ -1,3 +1,11 @@
+---
+layout: post
+title: Mac下安装LNMP环境
+category: 技术
+date: 2015-07-30
+tags: Mac LNMP
+---
+
 Mac下搭建lamp开发环境很容易，有xampp和mamp现成的集成环境。但是集成环境对于经常需要自定义一些配置的开发者来说会非常麻烦，而且Mac本身自带apache和php，在brew的帮助下非常容易手动搭建，可控性很高
 
 ## Brew
