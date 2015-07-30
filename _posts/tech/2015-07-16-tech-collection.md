@@ -28,12 +28,15 @@ tags: 教程
 #### 视频
 
 * [laracasts](https://laracasts.com)
+* [https://scotch.io/tag/laravel](https://scotch.io/tag/laravel)
 
-#### 与Laravel有关的博客
+#### 博客
 
 * [http://www.insp.top/learn-laravel-container](http://www.insp.top/learn-laravel-container)
 * [http://heera.it/](http://heera.it/)
 * [LARAVEL – 5.1.X ACL USING MIDDLEWARE](http://heera.it/laravel-5-1-x-acl-middleware)
+* [Laravel Coding](http://laravelcoding.com/blog)
+* [Laravel 5.1 Beauty](https://leanpub.com/l5-beauty/read) （博客搭建、图片管理、RSS订阅等）
 
 #### 常用的vender
 
@@ -44,6 +47,8 @@ tags: 教程
 * [Laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
 * [Repository](https://github.com/Bosnadev/Repositories)
 * [guzzlehttp/guzzle](https://packagist.org/packages/guzzlehttp/guzzle)
+* [验证码](https://github.com/mewebstudio/captcha)
+* [laravel 5 Markdown](https://github.com/yccphp/laravel-5-markdown-editor)
 
 ### 2. Composer
 
@@ -69,8 +74,12 @@ tags: 教程
  
  4. [学用 JavaScript 设计模式](http://wiki.jikexueyuan.com/project/javascript-design-patterns/)
  
+## 3、AngularJs
+
  
-## 3、Git
+ 
+ 
+## 4、Git
  
  1. [史上最浅显易懂的Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
  2. [Git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)	助你入门 git 的简明指南，木有高深内容 :)
