@@ -31,15 +31,15 @@ tags: Composr
 
  示例：
  
- ![image](http://www.lnmp100.com/uploads/2015/07/composer-show-installed.png)
+ ![image](http://www.lnmp100.com/static/uploads/2015/07/composer-show-installed.png)
  
  关于版本号的定义：
  
- ![image](http://www.lnmp100.com/uploads/2015/07/develop-version-define.png)
+ ![image](http://www.lnmp100.com/static/uploads/2015/07/develop-version-define.png)
  
  版本号演进：
  
- ![image](http://www.lnmp100.com/uploads/2015/07/developer-version-begin.png)
+ ![image](http://www.lnmp100.com/static/uploads/2015/07/developer-version-begin.png)
  
  
    
