@@ -24,6 +24,7 @@ tags: 教程
 #### 社区
 
 * [PHPHub](https://phphub.org/)
+* [LARAVEL DOJO](http://www.laravel-dojo.com/)
 
 #### 视频
 
@@ -50,12 +51,6 @@ tags: 教程
 * [验证码](https://github.com/mewebstudio/captcha)
 * [laravel 5 Markdown](https://github.com/yccphp/laravel-5-markdown-editor)
 * [evaOauth](http://avnpc.com/pages/evaoauth)
-
-### 2. Composer
-
-#### 官网
-
-#### 代理 
 
  
 
