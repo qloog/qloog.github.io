@@ -35,6 +35,20 @@ tags: Laravel
 	ArticlesController@getDelete => articles/delete
 	
 	
+## 常用命令
+
+	# 生成创建news表文件
+	php artisan make:migration create_news_table --create=news
+	# 创建表
+	php artisan migrate	
+	# 生成model文件到App/Models目录
+	php artisan make:model Models/News
+	
+## 常用方法或函数
+
+	# 获取除某字段之外的所有字段
+	Input::except(['_token');	
+	
 	
 ## 配置
 
