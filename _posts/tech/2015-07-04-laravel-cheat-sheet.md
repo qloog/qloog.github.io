@@ -20,6 +20,8 @@ tags: Laravel
 ### 2、路由模式
 
 	URL::route('articles.index')
+	// or
+	route('articles.index')
 	
 这种方式是指定匹配注册路由时的 'as' 参数，得到注册的uri。
 
@@ -33,6 +35,22 @@ tags: Laravel
 	ArticlesController@getAdd => articles/add
 	ArticlesController@postAdd => articles/add
 	ArticlesController@getDelete => articles/delete
+	
+## 数据库操作
+
+### 1、获取最后插入的ID
+
+> see: http://stackoverflow.com/questions/27873777/how-to-get-last-insert-id-in-eloquent-orm-laravel
+
+	$user = new User;
+
+	$user->name = 'John';
+	
+	$user->save();
+	
+	//Getting Last inserted id
+	
+	$insertedId = $user->id;	
 	
 	
 ## 常用命令

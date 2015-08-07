@@ -33,11 +33,12 @@ tags: 教程
 
 #### 博客
 
-* [http://www.insp.top/learn-laravel-container](http://www.insp.top/learn-laravel-container)
-* [http://heera.it/](http://heera.it/)
+* [http://www.insp.top/learn-laravel-container](http://www.insp.top/learn-laravel-container) (神奇的服务容器,有助于理解Laravel的架构理念)
+* [http://heera.it/](http://heera.it/) （一个blog）
 * [LARAVEL – 5.1.X ACL USING MIDDLEWARE](http://heera.it/laravel-5-1-x-acl-middleware)
-* [Laravel Coding](http://laravelcoding.com/blog)
+* [Laravel Coding](http://laravelcoding.com/blog) (如何搭建博客系统完整版-含后台管理功能)
 * [Laravel 5.1 Beauty](https://leanpub.com/l5-beauty/read) （博客搭建、图片管理、RSS订阅等）
+* [A Laravel 5 Boilerplate Project](https://github.com/rappasoft/laravel-5-boilerplate) (比较全面的一个project)
 
 #### 常用的vender
 
