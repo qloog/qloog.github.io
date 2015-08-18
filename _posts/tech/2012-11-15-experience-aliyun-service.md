@@ -1,7 +1,19 @@
-Title: 体验阿里云云服务器
-Date: 2012-11-15 23:03:30
-Tags: VPS, aliyun
+---
+layout: post
+title: 体验阿里云云服务器
+category: 资源
+date: 2012-11-15 23:03:30
+tags: VPS, aliyun
+---
 
+### 2015-08-18更新：
+
+	阿里云推荐码： 86AFBK  
+	有效期至：有效期至：2015-11-30 23:59:59
+
+---
+
+### 2012-11-15：
 
 最近发现阿里云的云服务推广的比较火，一直没去试用，可能也是因为自己有VPS，今天在逛博客园的时候，发现博客园有个“园豆兑换阿里云代金券”的活动，即可体验阿里云云服务器。 
 
@@ -15,3 +27,5 @@ Tags: VPS, aliyun
 如果想直接选配置购买可以点这里：<http://www.aliyun.com/cps/rebate?from_uid=TuscfmL3k+TT5ycXC3AeMzUgw1rsFbxa>
 
 希望爱折腾的你会喜欢。
+
+
