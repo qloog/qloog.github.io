@@ -48,6 +48,10 @@ tags: 博客
  * http://www.lizherui.com/   (taobao  , 北邮，文章不错，有空一一查看)
  * 闫肃的博客：http://yansu.org/ （PHP设计模式等）
  * https://b2e.cc/#blog
+ * EvaEngine： 
+   - https://github.com/EvaEngine/EvaEngine （A development engine based on Phalcon Framework）
+   - 介绍： http://evaengine.github.io/EvaEngine
+ 
   
 ## Python:
  * wklken:   http://wklken.me/

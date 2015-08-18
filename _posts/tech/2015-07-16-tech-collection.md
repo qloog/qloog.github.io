@@ -37,6 +37,7 @@ tags: 教程
 * [http://heera.it/](http://heera.it/) （一个blog）
 * [LARAVEL – 5.1.X ACL USING MIDDLEWARE](http://heera.it/laravel-5-1-x-acl-middleware)
 * [Laravel Coding](http://laravelcoding.com/blog) (如何搭建博客系统完整版-含后台管理功能)
+  > Posts Administration: http://laravelcoding.com/blog/laravel-5-beauty-posts-administration
 * [Laravel 5.1 Beauty](https://leanpub.com/l5-beauty/read) （博客搭建、图片管理、RSS订阅等）
 * [A Laravel 5 Boilerplate Project](https://github.com/rappasoft/laravel-5-boilerplate) (比较全面的一个project)
 
@@ -87,6 +88,21 @@ tags: 教程
  4. [学用 JavaScript 设计模式](http://wiki.jikexueyuan.com/project/javascript-design-patterns/)
  
 ## 3、AngularJs
+
+## 4、React
+
+ 1. 官网：https://facebook.github.io/react/
+ 2. 中文文档：http://reactjs.cn/
+ 3. React China: http://react-china.org/
+ 4. React 入门实例教程: http://www.ruanyifeng.com/blog/2015/03/react.html
+ 5. [颠覆式前端UI开发框架：React](http://www.infoq.com/cn/articles/subversion-front-end-ui-development-framework-react)
+ 6. React Demos: https://github.com/ruanyf/react-demos
+ 7. [React中文索引](http://nav.react-china.org/) （内有大量资料）
+ 8. [react-native-guide](https://github.com/ele828/react-native-guide) （React-Native指南汇集了react-native学习资源与各类开源app，非常全）
+ 9. [Amaze UI React](http://amazeui.org/react/) (基于 React.js 开发的 Web 组件库)
+ 10. [React：创建可维护、高性能的 UI 组件](http://www.ibm.com/developerworks/cn/web/wa-react-intro/index.html)  (有丰富的图解)
+ 11. [谁在用React](https://github.com/facebook/react/wiki/Sites-Using-React)
+ 12. UI: http://react-bootstrap.github.io/
 
  
  
