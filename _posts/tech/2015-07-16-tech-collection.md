@@ -89,6 +89,9 @@ tags: 教程
  
 ## 3、AngularJs
 
+ 1. [AngularJS学习笔记](http://www.zouyesheng.com/angular.html)
+ 	> Gitbook版： [http://checkcheckzz.gitbooks.io/angularjs-learning-notes/content/index.html](http://checkcheckzz.gitbooks.io/angularjs-learning-notes/content/index.html)
+
 ## 4、React
 
  1. 官网：https://facebook.github.io/react/
@@ -118,3 +121,7 @@ tags: 教程
  
 	> 支持Windows、Mac;   
 	> 支持 [Bitbucket](https://bitbucket.org/)、[Atlassian Stash](http://www.atlassian.com/software/stash/)、[Github](https://github.com/)
+	
+## 5、swift
+
+ 1. [The Swift Programming Language 中文版](http://wiki.jikexueyuan.com/project/swift/)
