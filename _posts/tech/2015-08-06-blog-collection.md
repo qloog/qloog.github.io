@@ -37,9 +37,7 @@ tags: 博客
  * PHP扩展：http://www.swoole.com/ (开发了swoole高并发框架)
  * 赞博客.赞生活：http://www.chenhaizan.cn/ （基于thinkphp3.1.3开发，13年毕业，年轻有为啊~）
  * http://mikespook.com/  （研究go,及PHP）
- * 吕毅的博客：http://pangee.duapp.com/blog/
  * demon：http://demon.at/
- * 北极星的小屋：http://readyfighting.com/  （内容感觉比较有含量）
  * 老柴的宅：http://chaishiwei.com/blog/  （里面的 Mac程序软件应用分享  不错）
  * 荒野无灯：http://ihacklog.com/
  * yuan-sir web菜鸟：http://www.yuansir-web.com/
@@ -47,7 +45,6 @@ tags: 博客
  * digdeeply：http://digdeeply.org/ （@qihoo）
  * http://www.lizherui.com/   (taobao  , 北邮，文章不错，有空一一查看)
  * 闫肃的博客：http://yansu.org/ （PHP设计模式等）
- * https://b2e.cc/#blog
  * EvaEngine： 
    - https://github.com/EvaEngine/EvaEngine （A development engine based on Phalcon Framework）
    - 介绍： http://evaengine.github.io/EvaEngine

@@ -1,6 +1,10 @@
-Title: 打造属于自己的Notepad++
-Date: 2012-02-29 15:03:03
-Tags: Notepad
+---
+layout: post
+title: 打造属于自己的Notepad++
+date: 2012-02-29 15:03:03
+category: 收藏
+tags: Notepad
+---
 
 Notepad++ 是一款Windows环境下免费开源的代码编辑器,最近一直在用，默认的可能没那么好用，需要来设置和添加插件、主题，这样用起来会舒服些！以下是直接转过来的，以后用到的插件再慢慢加进来吧。
 

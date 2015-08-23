@@ -1,6 +1,11 @@
-Title: Fabric 部署工具
-Date: 2014-05-24 21:14:50
+---
+layout: post
+title: Fabric 部署工具
+category: 收藏
+date: 2014-05-24 21:14:50
 Tags: Fabric
+---
+
 
 ![fabric](/static/uploads/2014/05/fabric-introduct.jpeg)
 

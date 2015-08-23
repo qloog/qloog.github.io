@@ -1,6 +1,10 @@
-Title: 开始Tornado的源码分析之旅
-Date: 2014-05-29 16:00
-Tags: Tornado, 源码阅读
+---
+layout: post
+title: 开始Tornado的源码分析之旅
+date: 2014-05-29 16:00
+category: 收藏
+tags: Tornado, 源码阅读
+---
 
 Tornado 是由 Facebook 开源的一个服务器“套装”，适合于做 python 的 web 或者使用其本身提供的可扩展的功能，完成了不完整的 wsgi 协议，可用于做快速的 web 开发，封装了 epoll 性能较好。  
 文章主要以分析 tornado 的网络部分即异步事件处理与上层的 IOstream 类提供的异步IO，其他的模块如 web 的 tornado.web 以后慢慢留作分析。

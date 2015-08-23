@@ -87,7 +87,7 @@ tags: 教程
  
  4. [学用 JavaScript 设计模式](http://wiki.jikexueyuan.com/project/javascript-design-patterns/)
  
-## 3、AngularJs
+## 3、AngularJS
 
  1. [AngularJS学习笔记](http://www.zouyesheng.com/angular.html)
  	> Gitbook版： [http://checkcheckzz.gitbooks.io/angularjs-learning-notes/content/index.html](http://checkcheckzz.gitbooks.io/angularjs-learning-notes/content/index.html)
