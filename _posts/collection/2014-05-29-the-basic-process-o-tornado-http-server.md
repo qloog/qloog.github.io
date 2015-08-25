@@ -1,6 +1,10 @@
-Title: Tornado HTTP服务器的基本流程
-Date: 2014-05-29 18:41:49
+---
+layout: post
+title: Tornado HTTP服务器的基本流程
+date: 2014-05-29 18:41:49
+category: 收藏
 Tags: Tornado, 源码阅读, httpserver, iostream
+---
 
 本小节介绍Tornado HTTP服务器的基本流程，分别分析httpserver, ioloop, iostream模块的代码来剖析Tornado底层I/O的内部实现。
 

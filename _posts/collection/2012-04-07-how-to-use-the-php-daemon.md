@@ -1,6 +1,10 @@
-Title: (转)如何利用PHP做守护进程
-Date: 2012-04-07 19:29:46
-Tags: PHP, 守护进程
+---
+layout: post
+title: (转)如何利用PHP做守护进程
+date: 2012-04-07 19:29:46
+category: 收藏
+tags: PHP, 守护进程
+---
 
 ## 起源
 Linux/Unix下守护进程（Daemon）大家都知道，比如我们常用的httpd、mysqld等等，就是常驻内存运行的程序，类似于Windows下的服务。一般守护进程都是使用C/C++来写，就是通过fork生成子进程，当前台shell下的父进程被杀掉，子进程就转到后台运行，为了不在终端产生输出信息，就通过syslog等函数来写日志文件。

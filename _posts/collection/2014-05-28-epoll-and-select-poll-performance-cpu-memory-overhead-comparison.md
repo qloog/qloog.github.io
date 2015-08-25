@@ -1,6 +1,10 @@
-Title: epoll与select/poll性能，CPU/内存开销对比
-Date: 2014-05-28 19:23
-Tags: epoll, select
+---
+layout: post
+title: epoll与select/poll性能，CPU/内存开销对比
+date: 2014-05-28 19:23
+category: 收藏
+tags: epoll select
+---
 
 
 Epoll 是 Linux 内核在2.5.44版本引进的一个新特性，旨在替换之前系统中老的 select, poll 等系统请求。这是 Linux I/O 系统一次质的飞跃。关于 Epoll 的详细的介绍见 [Wikipedia](http://en.wikipedia.org/wiki/Epoll)。

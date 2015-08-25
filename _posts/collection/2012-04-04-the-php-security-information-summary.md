@@ -1,6 +1,12 @@
-Title: PHP 安全学习资料
-Date: 2012-04-04 18:22:59
-Tags: PHP, 安全
+
+---
+layout: post
+title: PHP 安全学习资料
+date: 2012-04-04 18:22:59
+category: 收藏
+tags: PHP, 安全
+---
+
 
 
 ## 安全的定义

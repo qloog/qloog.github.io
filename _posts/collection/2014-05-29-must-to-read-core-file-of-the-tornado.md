@@ -1,6 +1,10 @@
-Title: Tornado源码必须要读的几个核心文件
-Date: 2014-05-29 17:20:00
-Tags: Tornado, 源码阅读
+---
+layout: post
+title: Tornado源码必须要读的几个核心文件
+date: 2014-05-29 17:20:00
+category: 收藏
+tags: Tornado 源码阅读
+---
 
 前面我们看了一些关于 Tornado 的总体框架设计图，还有一些模块设计。比如 为什么要阅读Tornado的源码？ 里面的文件组织，真的不少，那么我们应该具体去读哪几个文件呢？
 

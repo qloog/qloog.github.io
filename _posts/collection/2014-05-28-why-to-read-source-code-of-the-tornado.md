@@ -1,6 +1,10 @@
-Title: 为什么要阅读Tornado的源码
-Date: 2014-05-28 12:35
-Tags: Tornado, 源码阅读
+---
+layout: post
+title: 为什么要阅读Tornado的源码
+date: 2014-05-28 12:35
+category: 收藏
+tags: Tornado, 源码阅读
+---
 
 
 ## 为什么要阅读Tornado源码？

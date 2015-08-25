@@ -1,6 +1,11 @@
-Title: Tornado RequestHandler和Application类
-Date: 2014-05-29 19:13:13
-Tags: Tornado, 源码阅读
+---
+layout: post
+title: Tornado RequestHandler和Application类
+date: 2014-05-29 19:13:13
+category: 收藏
+tags: Tornado, 源码阅读
+---
+
 
 前面一小节提到了需要了解 web.py 这个文件，这个文件最关键的地方是定义了 Application 和 RequestHandler 类。我们再看看 Tornado 的 Hello World，我们再精简一下，下面是最简单的实例化并启动 Application 的方式：
 

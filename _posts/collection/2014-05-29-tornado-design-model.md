@@ -1,6 +1,11 @@
-Title: 鸟瞰Tornado框架的设计模型
-Date: 2014-05-29 16:51
-Tags: Tornado, 设计模型
+---
+layout: post
+title: 鸟瞰Tornado框架的设计模型
+date: 2014-05-29 16:51
+category: 收藏
+tags: Tornado, 设计模型
+---
+
 
 
 在深入到模块进行分析之前，首先来看看Tornado的设计模型。

@@ -1,6 +1,10 @@
-Title: HTTP协议基础知识详解
-Date: 2012-04-04 16:15:33
-Tags: HTTP, 协议
+---
+layout: post
+title: HTTP协议基础知识详解
+date: 2012-04-04 16:15:33
+category: 收藏
+tags: HTTP, 协议
+---
 
 
 当今web程序的开发技术真是百家争鸣，ASP.NET, PHP, JSP，Perl, AJAX 等等。 无论Web技术在未来如何发展，理解Web程序之间通信的基本协议相当重要， 因为它让我们理解了Web应用程序的内部工作. 本文将对HTTP协议进行详细的实例讲解，内容较多，希望大家耐心看。也希望对大家的开发工作或者测试工作有所帮助。使用Fiddler工具非常方便地捕获HTTP Request和HTTP Response, 关于Fiddler工具的用法，请查看博客[[Fiddler 教程](http://kb.cnblogs.com/page/130367/)]  **阅读目录**

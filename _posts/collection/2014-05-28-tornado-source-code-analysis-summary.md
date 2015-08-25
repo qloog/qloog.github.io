@@ -1,6 +1,10 @@
-Title: Tornado源码解析目录汇总
-Date: 2014-05-28 12:16
-Tags: Tornado, 源码分析
+---
+layout: post
+title: Tornado源码解析目录汇总
+date: 2014-05-28 12:16
+category: 收藏
+tags: Tornado, 源码分析
+---
 
 为了能够更好的学习tornado框架，更好的运用它，接下来将对tornado进行分析讲解。
 

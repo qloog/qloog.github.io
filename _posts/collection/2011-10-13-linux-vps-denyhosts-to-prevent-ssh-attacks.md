@@ -1,6 +1,10 @@
-Title: Linux VPS上DenyHosts阻止SSH暴力攻击
-Date: 2011-10-13 17:29:17
-Tags: VPS, DenyHosts, SSH暴力攻击
+---
+layout: post
+title: Linux VPS上DenyHosts阻止SSH暴力攻击
+date: 2011-10-13 17:29:17
+category: 收藏
+tags: VPS DenyHosts SSH暴力攻击
+---
 
 
 现在的互联网非常不安全，很多人没事就拿一些扫描机扫描ssh端口，然后试图连接ssh端口进行暴力破解（穷举扫描），所以建议vps主机的空间,尽量设置复杂的ssh登录密码，虽然在前段时间曾经介绍过Linux VPS禁止某个IP访问使用hosts.deny禁止某些IP访问，但是功能方面欠缺，如：不能自动屏蔽，那么有什么更好的办法吗，就可以使用denyhosts这款软件了，它会分析/var/log/secure（redhat，Fedora Core）等日志文件，当发现同一IP在进行多次SSH密码尝试时就会记录IP到/etc/hosts.deny文件，从而达到自动屏蔽该IP的目的。 DenyHosts官方网站为：<http://denyhosts.sourceforge.net/>   
