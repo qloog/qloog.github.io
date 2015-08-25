@@ -40,6 +40,7 @@ tags: 教程
   > Posts Administration: http://laravelcoding.com/blog/laravel-5-beauty-posts-administration
 * [Laravel 5.1 Beauty](https://leanpub.com/l5-beauty/read) （博客搭建、图片管理、RSS订阅等）
 * [A Laravel 5 Boilerplate Project](https://github.com/rappasoft/laravel-5-boilerplate) (比较全面的一个project)
+* https://laraveltips.wordpress.com/
 
 #### 常用的vender
 

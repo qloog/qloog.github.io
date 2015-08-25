@@ -7,14 +7,15 @@ tags: swift
 ---
 
 
-swift是一门强类型语言，所以当不同类型的变量在处理时如果不对应就会报错。  
+> swift是一门强类型语言，所以当不同类型的变量在处理时如果不对应就会报错。  
 不过我们在定义变量的时候可以不加，系统会自动去识别对应的类型。  
 建议还是定义上比较好，看着会比较清晰。
 
 
 1、let 和 var的区别
-let: 用于定义常量
-var: 用于定义变量
+
+let: 用于定义常量  
+var: 用于定义变量  
 区别：var value can be change, after initialize. But let value is not be change, when it is intilize once.
 
 2、键盘隐藏
@@ -32,7 +33,8 @@ CGSize
 CGRect 表示一个矩形的位置和大小
 
 ### 三元运算符
-see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html#//apple_ref/doc/uid/TP40014097-CH6-ID60
+
+> see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html#//apple_ref/doc/uid/TP40014097-CH6-ID60
 
 	a ?? b
 	
@@ -51,7 +53,8 @@ see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swif
 
 
 
-##常量和变量
+## 常量和变量
+
 	var a = 1
 	a = 10
 	var b = 2
@@ -61,7 +64,8 @@ see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swif
 
 	pirntln(c)
 
-##类型
+## 类型
+
 	//单引号的字符串会报错  
 	var str="Hello"  
 
@@ -74,6 +78,7 @@ see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swif
 	println(str)
 
 ## 字符串连接操作
+
 	var i = 100  
 	var str = "Hello"  
 	str = str + "jikexuanyuan"  
@@ -97,7 +102,8 @@ see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swif
 	let mark = "!"  
 	welcome.append(mark) //Hello!
 
-##数组
+## 数组
+
 	var arr = ["Hello", "jikexueyuan", 100, 2.3]
 	println(arr)
 
@@ -106,7 +112,8 @@ see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swif
 	//特定类型的空数组  
 	var arr2 = [String]()
 
-##字典
+## 字典
+
 	var dict = ["name":"jikexueyuan", "age":"16"]
 	//动态赋值
 	dict["sex"] = "Female"
@@ -120,7 +127,8 @@ see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swif
 	//也可以不定义类型  
 	var airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
 
-##循环
+## 循环
+
 	1.索引
 	var arr = [String]()
 
@@ -148,6 +156,7 @@ see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swif
 	}
 
 ## 流程控制
+
 	for index in 0..100{
 		if index%2==0 {
 			println(index)
@@ -163,7 +172,8 @@ see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swif
 		println("Hello \(name)")
 	}
 
-##函数
+## 函数
+
 	//需要指名类型，否则会报错
 	func sayHello(name:String){
 		println("Hello \(name)")
@@ -186,7 +196,7 @@ see: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swif
 	fun("shangsan")
 
 
-##面向对象
+## 面向对象
 
 //可以有多个构造方法，但不能参数相同，否则认为是重复定义了，可以是参数不同的多个构造方法  
 
