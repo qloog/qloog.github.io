@@ -1,6 +1,10 @@
-Title: PHP 常用缓存 APC & Memcache & Memcached
-Date: 2012-11-29 22:48:42
-Tags: PHP, cache, apc, memcache, memcached
+---
+layout: post
+title: PHP 常用缓存 APC & Memcache & Memcached
+date: 2012-11-29 22:48:42
+category: 技术
+tags: PHP, cache, apc, memcache, memcached
+---
 
 
 APC：Alternative PHP Cache（APC）是 PHP 的一个免费公开的优化代码缓存。它用来提供免费，公开并且强健的架构来缓存和优化 PHP 的中间代码。

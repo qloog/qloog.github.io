@@ -1,6 +1,10 @@
-Title: PHP 常用加速器 APC & eAccelerator & XCache
-Date: 2012-11-29 22:45:43
-Tags: PHP, APC, eAccelerator, XCache
+---
+layout: post
+title: PHP 常用加速器 APC & eAccelerator & XCache
+date: 2012-11-29 22:45:43
+category: 技术
+tags: PHP, APC, eAccelerator, XCache
+---
 
 > PHP 加速器是一个为了提高 PHP 执行效率，从而缓存起 PHP 的操作码，这样 PHP 后面执行就不用解析转换了，可以直接调用 PHP 操作码，这样速度上就提高了不少。
 >

@@ -1,6 +1,10 @@
-Title: 配置 .vimrc 解决 Vim / gVim 在中文 Windows 下的字符编码问题
-Date: 2011-12-14 13:32:27
-Tags: vim, gvim
+---
+layout: post
+title: 配置 .vimrc 解决 Vim / gVim 在中文 Windows 下的字符编码问题
+date: 2011-12-14 13:32:27
+category: 技术
+tags: vim, gvim
+---
 
 
 

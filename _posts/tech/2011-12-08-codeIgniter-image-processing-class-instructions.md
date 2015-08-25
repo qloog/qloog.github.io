@@ -1,6 +1,10 @@
-Title: CodeIgniter 的图像处理类使用说明
-Date: 2011-12-08 17:53:45
-Tages: CodeIgniter
+---
+layout: post
+title: CodeIgniter 的图像处理类使用说明
+date: 2011-12-08 17:53:45
+category: 技术
+tages: CodeIgniter
+---
 
 
 
