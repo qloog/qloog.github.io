@@ -126,3 +126,13 @@ tags: 教程
 ## 5、swift
 
  1. [The Swift Programming Language 中文版](http://wiki.jikexueyuan.com/project/swift/)
+ 2. [https://github.com/matteocrippa/awesome-swift](https://github.com/matteocrippa/awesome-swift)
+ 3. [SwiftGuide](https://github.com/ipader/SwiftGuide) 这份指南汇集了Swift语言主流学习资源，并以开发者的视角整理编排。 `推荐`
+ 4. [初级入门篇](http://www.hangge.com/blog/cache/category_72_13.html) 简单易学
+ 
+#### 源码学习
+ 
+ 1. 聊天app: https://github.com/acani/Chats
+ 2. 豆瓣妹子图iOS客户端： https://github.com/Sunnyyoung/Meizi (Obj-c)
+ 3. v2ex： https://github.com/singro/v2ex (Obj-c)
+ 4. 糗事百科： https://github.com/YANGReal/JokeClient-Swift (swift)
