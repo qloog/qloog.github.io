@@ -132,7 +132,9 @@ tags: 教程
  
 #### 源码学习
  
- 1. 聊天app: https://github.com/acani/Chats
- 2. 豆瓣妹子图iOS客户端： https://github.com/Sunnyyoung/Meizi (Obj-c)
- 3. v2ex： https://github.com/singro/v2ex (Obj-c)
- 4. 糗事百科： https://github.com/YANGReal/JokeClient-Swift (swift)
+ 1. 知乎日报： https://github.com/jxd001/Swift-ZhihuDaily
+ 2. 聊天app: https://github.com/acani/Chats
+ 3. 豆瓣妹子图iOS客户端： https://github.com/Sunnyyoung/Meizi (Obj-c)
+ 4. v2ex： https://github.com/singro/v2ex (Obj-c)
+ 5. 糗事百科： https://github.com/YANGReal/JokeClient-Swift (swift)
+ 6. FlappySwift： https://github.com/fullstackio/FlappySwift
