@@ -38,7 +38,6 @@ Github: [https://github.com/jkaving/intellij-colors-solarized](https://github.co
  > 如果想要保持左侧导航和编辑区的风格相同，可安装插件： Color Ide
 
 
-
 ## 一个经典的主题(solarized)：
 
 ![image](/static/uploads/2015/08/solarized-vim.png)

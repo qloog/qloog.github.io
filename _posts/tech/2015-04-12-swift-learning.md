@@ -1,15 +1,22 @@
 ---
 layout: post
-title: swift基础教程学习笔记--快速入门篇
+title: Swift - 基础教程学习笔记 -- 快速入门篇
 date:  2015-04-12 23:09:00
 category: 技术
-tags: swift
+tags: Swift
 ---
 
 
 > swift是一门强类型语言，所以当不同类型的变量在处理时如果不对应就会报错。  
 不过我们在定义变量的时候可以不加，系统会自动去识别对应的类型。  
 建议还是定义上比较好，看着会比较清晰。
+
+查看当前系统swift的版本号：
+
+	➜  ~  xcrun swift --version
+	Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)
+	Target: x86_64-apple-darwin14.5.0
+	➜  ~
 
 
 1、let 和 var的区别
@@ -232,7 +239,9 @@ CGRect 表示一个矩形的位置和大小
 
 //有构造方法的时候
 var h = Hello(name: "zhangsan")
-h.sayHi()
+h.sayHi()  
+
+ > 类中的 静态方法不能被重写，而类方法可以被重写
 
 
 ## 开发IOS项目
