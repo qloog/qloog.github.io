@@ -36,6 +36,13 @@ vim插件挑选：[http://vimawesome.com/](http://vimawesome.com/)
 Github: [https://github.com/jkaving/intellij-colors-solarized](https://github.com/jkaving/intellij-colors-solarized)
 
  > 如果想要保持左侧导航和编辑区的风格相同，可安装插件： Color Ide
+ 
+ 
+## highlight.js
+
+demo: [https://highlightjs.org/static/demo/](https://highlightjs.org/static/demo/)
+
+ > 支持大部分语言，支持多重配色
 
 
 ## 一个经典的主题(solarized)：
