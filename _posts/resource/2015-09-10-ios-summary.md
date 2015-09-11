@@ -1,8 +1,8 @@
 ---
 layout: post
-title: iOS开发自学资源收集列表
+title: "IOS开发自学资源收集列表"
 category: 资源
-date: 2015-09-10 14:16
+date: 2015-09-10 14:16:00
 tags: swift
 ---
 
