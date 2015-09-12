@@ -11,14 +11,6 @@ Swift是一门强类型语言，所以当不同类型的变量在处理时如果
 不过我们在定义变量的时候可以不加，系统会自动去识别对应的类型。  
 建议还是定义上比较好，看着会比较清晰。
 
-查看当前系统swift的版本号：
-
-	➜  ~  xcrun swift --version
-	Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)
-	Target: x86_64-apple-darwin14.5.0
-	➜  ~
-
-
 ### let 和 var的区别
 
 let: 用于定义常量  
@@ -265,6 +257,15 @@ h.sayHi()
 	
 		}
 	}
+	
+查看当前系统swift的版本号：
+
+	➜  ~  xcrun swift --version
+	Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)
+	Target: x86_64-apple-darwin14.5.0
+	➜  ~
+
+
 	
 
 
