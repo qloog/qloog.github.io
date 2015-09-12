@@ -7,7 +7,7 @@ tags: Swift
 ---
 
 
-> swift是一门强类型语言，所以当不同类型的变量在处理时如果不对应就会报错。  
+Swift是一门强类型语言，所以当不同类型的变量在处理时如果不对应就会报错。  
 不过我们在定义变量的时候可以不加，系统会自动去识别对应的类型。  
 建议还是定义上比较好，看着会比较清晰。
 
@@ -23,7 +23,8 @@ tags: Swift
 
 let: 用于定义常量  
 var: 用于定义变量  
-区别：var value can be change, after initialize. But let value is not be change, when it is intilize once.
+
+ > 区别：var value can be change, after initialize. But let value is not be change, when it is intilize once.
 
 2、键盘隐藏
 可以在 touchesEnded时触发：
