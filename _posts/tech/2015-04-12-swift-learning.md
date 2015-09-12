@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swift - 基础教程学习笔记 -- 快速入门篇
+title: "Swift - 基础教程学习笔记 -- 快速入门篇"
 date:  2015-04-12 23:09:00
 category: 技术
 tags: Swift
