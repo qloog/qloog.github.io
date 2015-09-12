@@ -19,23 +19,25 @@ Swift是一门强类型语言，所以当不同类型的变量在处理时如果
 	➜  ~
 
 
-1、let 和 var的区别
+### let 和 var的区别
 
 let: 用于定义常量  
 var: 用于定义变量  
 
- > 区别：var value can be change, after initialize. But let value is not be change, when it is intilize once.
+> 区别：var value can be change, after initialize. But let value is not be change, when it is intilize once.
 
-2、键盘隐藏
+### 键盘隐藏
+
 可以在 touchesEnded时触发：
 resignFirstResponder
 
-3、对于xcode6模拟器运行程序后不显示键盘，可能是因为连接到了真机键盘。
+### 对于xcode6模拟器运行程序后不显示键盘，可能是因为连接到了真机键盘。
+
 只需要打开模拟器，在菜单栏中选择：
 设置模拟器：hardware -> keyboard -> connect hardware keyboard(快捷键shift+command+k)
 默认情况下，xcode使用电脑键盘作为外接键盘，不再弹出虚拟键盘。
 
-4、三个结构体 (貌似是oc里的)
+### 三个结构体 (貌似是oc里的)
 CGPoint
 CGSize 
 CGRect 表示一个矩形的位置和大小
@@ -247,13 +249,13 @@ h.sayHi()
 
 ## 开发IOS项目
 
-viewController 里写：
-
-@IBOutlet var wv:UIWebView
-
-viewDidLoad(){
-	wv.loadRequest(NSURLRequest(URL:NSURL(String:"http://jikexueyuan.com")))
-}
+	viewController 里写：
+	
+	@IBOutlet var wv:UIWebView
+	
+	viewDidLoad(){
+		wv.loadRequest(NSURLRequest(URL:NSURL(String:"http://jikexueyuan.com")))
+	}
 
   
 //强制转换为字典，  as?  为强制转换
