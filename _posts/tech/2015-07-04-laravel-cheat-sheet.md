@@ -9,10 +9,12 @@ tags: Laravel
 ## 路由
 
 ### 1、简单模式
- 
-	<a href="{{ url('/articles') }}">链接</a>
-	// or
-	<a href="{{ URL::to('/articles') }}">链接</a>
+
+```php 
+<a href="{{ url('/articles') }}">链接</a>
+// or
+<a href="{{ URL::to('/articles') }}">链接</a>
+```
 	
 这种方式，只是简单的将你指定的路径拼接到网站根url上。
 	
