@@ -9,7 +9,7 @@ tags: zsh phpstorm
 
 ## vim
 
-![image](/uploads/2015/09/spf13-vim.png)  
+![image](/static/uploads/2015/09/spf13-vim.png)  
 推荐使用：spf13  
 官网： [http://vim.spf13.com/](http://vim.spf13.com/)  
 Github: [https://github.com/spf13/spf13-vim](https://github.com/spf13/spf13-vim)
