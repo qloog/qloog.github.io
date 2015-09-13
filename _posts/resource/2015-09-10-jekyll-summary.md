@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Jekyll 使用整理
+title: Jekyll使用整理
 category: 工具
-date: 2015-19-10 13:46:30
+date: 2015-09-10 13:46:30
 tags: Jekyll
 ---
 
