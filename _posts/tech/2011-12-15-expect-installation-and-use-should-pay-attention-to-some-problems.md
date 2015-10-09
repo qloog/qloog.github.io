@@ -1,6 +1,10 @@
-Title: expect安装和使用需要注意的几个问题
-Date: 2011-12-15 16:47:30
-Tags: expect
+---
+layout: post
+title: expect安装和使用需要注意的几个问题
+category: 技术
+date: 2011-12-15 16:47:30
+tags: expect
+---
 
 
 从远程服务器拷贝数据文件到指定的服务器上，估计是需要同学都遇到过的问题。

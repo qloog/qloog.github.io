@@ -1,6 +1,10 @@
-Title: 通过pelican自带make部署到线上
-Date: 2014-05-24 18:42:30
-Tags: make, pelican
+---
+layout: post
+title: 通过pelican自带make部署到线上
+category: 技术
+date: 2014-05-24 18:42:30
+tags: make pelican
+---
 
 [这里](/note/pelican-install-summary.html)写了如何通过pelican生成静态博客，
 那么生成静态博客后如何将其部署到线上环境呢？pelican本身提供了比较多的部署方式。

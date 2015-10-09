@@ -1,6 +1,10 @@
-Title: CentoS下Django1.3 & Nginx(FastCGI & flup) & MySQL安装配置详解
-Date: 2012-03-14 22:58:31
-Tags: Django, CentOS
+---
+layout: post
+title: CentoS下Django1.3 & Nginx(FastCGI & flup) & MySQL安装配置详解
+category: 技术
+date: 2012-03-14 22:58:31
+tags: Django CentOS
+---
 
 Django是一个开源的Web应用框架，由Python写成，并于2005年7月在BSD许可证下发布。  
 

@@ -1,6 +1,10 @@
-Title: Linux下的expect的下载和安装
-Date: 2011-12-15 16:24:12
-Tags: expect, linux
+---
+layout: post
+title: Linux下的expect的下载和安装
+category: 技术
+date: 2011-12-15 16:24:12
+tags: expect linux
+---
 
 
 Expect是在Tcl基础上创建起来的，它还提供了一些Tcl所没有的命令，它可以用来做一些linux下无法做到交互的一些命令操作，在远程管 理方面发挥很大的作用。

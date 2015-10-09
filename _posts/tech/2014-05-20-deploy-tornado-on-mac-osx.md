@@ -1,6 +1,10 @@
-Title: 在Mac OSX上部署tornado
-Date: 2014-05-20 17:54:31
-Tags: tornado
+---
+layout: post
+title: 在Mac OSX上部署tornado
+category: 技术
+date: 2014-05-20 17:54:31
+tags: tornado
+---
 
 在安装前大概介绍下tornado
 

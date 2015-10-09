@@ -1,6 +1,10 @@
-Title: PHP中in_array 效率极其优化
-Date: 2013-12-26 12:05:20
-Tags: PHP, in_array, 优化
+---
+layout: post
+title: PHP中in_array 效率极其优化
+category: 技术
+date: 2013-12-26 12:05:20
+tags: PHP in_array 优化
+---
 
 ## PHP中in_array 效率极其优化
 

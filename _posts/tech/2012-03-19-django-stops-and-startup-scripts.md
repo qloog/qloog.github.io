@@ -1,6 +1,10 @@
-Title: django停止与启动脚本分享
-Date: 2012-03-19 22:22:31
-Tags: Django, Pyton
+---
+layout: post
+title: django停止与启动脚本分享
+category: 技术
+date: 2012-03-19 22:22:31
+tags: Django Pyton
+---
 
 
 刚装好django之后，修改完project里的urls.py或setting之后，总要重启fcgi来重新加载其配置，需要以下三步才可以完成：

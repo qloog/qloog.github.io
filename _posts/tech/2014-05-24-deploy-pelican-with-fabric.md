@@ -1,6 +1,10 @@
-Title: Fabric部署pelican
-Date: 2014-05-24 22:05:10
-Tags: pelican, fabric
+---
+layout: post
+title: Fabric部署pelican
+category: 技术
+date: 2014-05-24 22:05:10
+tags: pelican fabric
+---
 
 关于pelican的部署，[前面](/note/deploy-pelican-with-make.html)通过make的方式部署过，
 这里我们介绍下通过[fabric](/collection/about-fabric.html) 来部署.

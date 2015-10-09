@@ -1,6 +1,10 @@
-Title: 基于Django架构的网站及学习资料汇总
-Date: 2012-03-19 14:52:14
-Tags: Django, Python
+---
+layout: post
+title: 基于Django架构的网站及学习资料汇总
+category: 技术
+date: 2012-03-19 14:52:14
+tags: Django Python
+---
 
 ## 网站
 

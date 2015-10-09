@@ -1,6 +1,10 @@
-Title: Linux中cp直接覆盖不提示的方法
-Date: 2011-11-21 14:11:11
-Tags: cp
+---
+layout: post
+title: Linux中cp直接覆盖不提示的方法
+category: 技术
+date: 2011-11-21 14:11:11
+tags: 反向ajax
+---
 
 
 有时拷贝文件比较多的目录，cp覆盖时，无论加什么参数-f之类的还是提示是否覆盖，这在cp覆盖操作的时候是不能忍受的。

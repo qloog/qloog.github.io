@@ -1,6 +1,10 @@
-Title: cURL常用的几个PHP函数
-Date: 2012-04-04 15:15:28
-Tags: PHP, curl
+---
+layout: post
+title: cURL常用的几个PHP函数
+category: 技术
+date: 2012-04-04 15:15:28
+tags: PHP curl
+---
 
 
 cURL是一个功能强大的PHP库，我们可以使用PHP的cURL采用GET、POST等方式发送请求，获取网页内容以及取一个XML文件并把其导入数据库等等。本文中收集了几种常用的PHP的cURL函数，以备使用。主要的有几个PHP函数用于：GET，POST，HTTP验证，302重定向，设置cURL的代理。  
