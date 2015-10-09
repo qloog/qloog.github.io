@@ -22,6 +22,12 @@ tags: swift
  * [码农周刊《Swift 特刊》](http://weekly.manong.io/issues/33?ref=swift)
  * [objc中国](http://objccn.io/)
  * [objc.io](https://www.objc.io/)   Books
+ * [SwiftGG](http://swift.gg)	走心的 Swift 翻译组
+ 
+ 
+## 第三方组件
+
+ * [Alamofire](https://github.com/Alamofire/Alamofire)  Alamofire is an HTTP networking library written in Swift.
  
 
 ## 视频教程 
