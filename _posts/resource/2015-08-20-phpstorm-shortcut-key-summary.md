@@ -29,9 +29,11 @@ tags: PHPStorm
     shift + command + o　　搜索项目中的文件
     command + [		跳转到上一个位置
     command + ]		跳转到下一个位置
+    option + j  多选单个单词，即一次可以对多个同样单词进行修改
 
     
 ### 自定义的快捷键：
+
 > 为了和Sublime Text 的快捷键保持一致
 
 	command + o 搜索项目中的类文件
