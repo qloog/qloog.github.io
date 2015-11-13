@@ -16,6 +16,27 @@ brew的安装方式如下：
 
 	ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 	
+之后就可以使用 `brew` 来安装所需要的依赖了。
+
+brew（意为酿酒）的命名很有意思，全部都使用了酿酒过程中采用的材料/器具，名词对应以下的概念：
+
+ * Formula（配方） 程序包定义，本质上是一个rb文件
+ * Keg（桶）程序包的安装路径
+ * Cellar（地窖）所有程序包（桶）的根目录
+ * Tap（水龙头）程序包的源
+ * Bottle （瓶子）编译打包好的程序包
+ 
+最终编译安装完毕的程序就是一桶酿造好的酒
+
+更详细的信息参考[Homebrew的官方Cookbook](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md)
+
+因此使用Homebrew常见的流程是：
+
+ 1. 增加一个程序源（新增一个水龙头） brew tap homebrew/php
+ 2. 更新程序源 brew update
+ 3. 安装程序包（按照配方酿酒） brew install git
+ 4. 查看配置 brew config 可以看到程序包默认安装在/usr/local/Cellar下 （酒桶放在地窖内）
+	
 brew常用选项
 
 	brew install xxx
@@ -306,7 +327,7 @@ Redis默认配置文件不允许以Deamon方式运行，因此需要先修改配
 
 最后可以对所有服务的启动停止设置别名方便操作
 
-	vim ~/.bash_profile
+	vim ~/.bash_profile (如果是zsh, vim ~/.zshrc)
 	
 加入
 
@@ -324,7 +345,11 @@ Redis默认配置文件不允许以Deamon方式运行，因此需要先修改配
 	alias redis.restart='redis.stop && redis.start'
 	alias memcached.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist"
 	alias memcached.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist"
-	alias memcached.restart='memcached.stop && memcached.start'	
+	alias memcached.restart='memcached.stop && memcached.start'
+	
+然后执行
+	
+	source ~/.zshrc	
 	
 ## MongoDB
 
@@ -372,8 +397,9 @@ RockMongo是MongoDB很好用的一个web应用，安装也很容易
 这样就在mac下配置好一个php开发环境了，enjoy it!
 
 参考:
- - [Hot to install nginx, PHP-fpm 5.5.6, mongo and MySql on mac with homebrew](http://www.nabito.net/hot-to-install-nginx-php-fpm-5-5-6-mongo-and-mysql-on-mac-with-homebrew/)
- - [Install NGINX, PHP-FPM (5.5.6), Mongo and MySql](https://gist.github.com/OzzyCzech/7658282)
- - [Install Nginx, PHP-FPM, MySQL and phpMyAdmin on OS X Mavericks using Homebrew](http://blog.frd.mn/install-nginx-php-fpm-mysql-and-phpmyadmin-on-os-x-mavericks-using-homebrew/)
- - [Mac下用brew搭建PHP(LNMP/LAMP)开发环境](http://yansu.org/2013/12/11/lamp-in-mac.html)
- - [Install Nginx, PHP-FPM, MySQL and phpMyAdmin on OS X Mavericks or Yosemite](http://blog.frd.mn/install-nginx-php-fpm-mysql-and-phpmyadmin-on-os-x-mavericks-using-homebrew/)
+
+ * [Hot to install nginx, PHP-fpm 5.5.6, mongo and MySql on mac with homebrew](http://www.nabito.net/hot-to-install-nginx-php-fpm-5-5-6-mongo-and-mysql-on-mac-with-homebrew/)  
+ * [Install NGINX, PHP-FPM (5.5.6), Mongo and MySql](https://gist.github.com/OzzyCzech/7658282)  
+ * [Install Nginx, PHP-FPM, MySQL and phpMyAdmin on OS X Mavericks using Homebrew](http://blog.frd.mn/install-nginx-php-fpm-mysql-and-phpmyadmin-on-os-x-mavericks-using-homebrew/)  
+ * [Mac下用brew搭建PHP(LNMP/LAMP)开发环境](http://yansu.org/2013/12/11/lamp-in-mac.html)
+ * [Install Nginx, PHP-FPM, MySQL and phpMyAdmin on OS X Mavericks or Yosemite](http://blog.frd.mn/install-nginx-php-fpm-mysql-and-phpmyadmin-on-os-x-mavericks-using-homebrew/)

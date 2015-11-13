@@ -13,10 +13,23 @@ tags: React
  * React Demos: [https://github.com/ruanyf/react-demos](https://github.com/ruanyf/react-demos)
  * [React中文索引](http://nav.react-china.org/) （内有大量资料）
  
+## 名词解释
+
+ * [browserify](http://browserify.org/)：可以让你使用类似于 node 的 require() 的方式来组织浏览器端的 Javascript 代码，通过预编译让前端 Javascript 可以直接使用 Node NPM 安装的一些库。
+ 	* [浏览器加载Node.js模块](http://javascript.ruanyifeng.com/tool/browserify.html)
+ 	* [browserify运行原理分析](http://www.alloyteam.com/2014/10/browserify-yun-xing-yuan-li-fen-xi/)
+ 
+ 
 ## 入门教程 
+ * 快速入门：[http://reactjs.cn/docs/getting-started.html](http://reactjs.cn/docs/getting-started.html)
  * React 入门实例教程: [http://www.ruanyifeng.com/blog/2015/03/react.html](http://www.ruanyifeng.com/blog/2015/03/react.html)
  * 多步骤的注册实例：[https://viget.com/extend/building-a-multi-step-registration-form-with-react](https://viget.com/extend/building-a-multi-step-registration-form-with-react)  
   > Github: [https://github.com/tommymarshall/react-multi-step-form](https://github.com/tommymarshall/react-multi-step-form)
+ * Do You React?(系列视频)：[https://laracasts.com/series/do-you-react](https://laracasts.com/series/do-you-react) 
+
+## 系列教程
+  * Part 1: [Introduction to React.js](http://smashingboxes.com/ideas/learn-react-part-1)
+  * Part 2: [ES2015 and JSX; Intermediate components with props and state](http://smashingboxes.com/ideas/learn-react-part-2)
  	
  	
 ## 组件库 	
