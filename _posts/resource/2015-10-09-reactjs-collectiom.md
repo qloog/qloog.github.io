@@ -30,6 +30,11 @@ tags: React
 ## 系列教程
   * Part 1: [Introduction to React.js](http://smashingboxes.com/ideas/learn-react-part-1)
   * Part 2: [ES2015 and JSX; Intermediate components with props and state](http://smashingboxes.com/ideas/learn-react-part-2)
+  * [深入浅出React（一）：React的设计哲学 - 简单之美](http://www.infoq.com/cn/articles/react-art-of-simplity?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_articles_clk)
+  * [深入浅出React（二）：React开发神器Webpack](http://www.infoq.com/cn/articles/react-and-webpack?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_articles_clk)
+  * [深入浅出React（三）：理解JSX和组件](http://www.infoq.com/cn/articles/react-jsx-and-component?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_articles_clk)
+  * [深入浅出React（四）：虚拟DOM Diff算法解析](http://www.infoq.com/cn/articles/react-dom-diff?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_articles_clk)
+  * [深入浅出React（五）：使用Flux搭建React应用程序架构](http://www.infoq.com/cn/articles/react-flux?utm_source=infoq&utm_medium=related_content_link&utm_campaign=relatedContent_articles_clk)
  	
  	
 ## 组件库 	
@@ -48,3 +53,7 @@ tags: React
  
 ## 相关
  * [react-native-guide](https://github.com/ele828/react-native-guide) （React-Native指南汇集了react-native学习资源与各类开源app，非常全） 
+ 
+## 常见问题总结
+ 
+ * https://github.com/gaearon/react-hot-loader/blob/master/docs/Troubleshooting.md 

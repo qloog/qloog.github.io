@@ -35,8 +35,13 @@ tags: Laravel
 * [Laravel Coding](http://laravelcoding.com/blog) (如何搭建博客系统完整版-含后台管理功能)
   > Posts Administration: http://laravelcoding.com/blog/laravel-5-beauty-posts-administration
 * [Laravel 5.1 Beauty](https://leanpub.com/l5-beauty/read) （博客搭建、图片管理、RSS订阅等）
-* [A Laravel 5 Boilerplate Project](https://github.com/rappasoft/laravel-5-boilerplate) (比较全面的一个project)
 * [https://laraveltips.wordpress.com/](https://laraveltips.wordpress.com/)
+
+### 角色与权限
+
+* [A Laravel 5 Boilerplate Project](https://github.com/rappasoft/laravel-5-boilerplate) (比较全面的一个project)
+* [角色和权限](https://github.com/romanbican/roles) (一个独立的vender)
+
 
 ### 常用的vender
 
@@ -50,5 +55,4 @@ tags: Laravel
 * [验证码](https://github.com/mewebstudio/captcha)
 * [laravel 5 Markdown](https://github.com/yccphp/laravel-5-markdown-editor)
 * [evaOauth](http://avnpc.com/pages/evaoauth)
-* [角色和权限](https://github.com/romanbican/roles)
 
