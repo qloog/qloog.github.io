@@ -1,0 +1,22 @@
+{
+    "name": "",
+
+    "created_at": "{{date}}",
+    "author": "{{author}}",
+
+    "file_type": "",
+
+    "pips": [{
+	"name": "",
+	"path": ""
+    }],
+
+    "piplines": [{
+	"filename": "",
+        "init": "",
+        "editor": "",
+	"pipline": []
+    }],
+
+    "comment": "********************* THE END *****************************"
+}

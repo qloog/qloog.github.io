@@ -16,16 +16,23 @@ tags: Laravel
 
 * [中文文档5.1](http://laravel-china.org/docs/5.1)
 * [官方文档](http://laravel.com/docs/5.1)
+* [Laravel-awesome](https://github.com/chiraggude/awesome-laravel) [大全]
+* [让更好用的Laravel来构建web应用](http://slides.com/ryanyuan/better-use-of-laravel-to-build-web-applications#/)
+* [Laravel - 从百草园到三味书屋 "From Apprentice To Artisan"目录](http://my.oschina.net/zgldh/blog/389246)
 
 ### 社区
 
 * [PHPHub](https://phphub.org/)
-* [LARAVEL DOJO](http://www.laravel-dojo.com/)
+* [Laravel学院](http://laravelacademy.org)   √推荐
+* [Laravel问答](http://wenda.golaravel.com)
+* [Laraveltricks](http://laravel-tricks.com)
+* [Laravel dojo](http://www.laravel-dojo.com/)
 
 ### 视频
 
 * [laracasts](https://laracasts.com)
 * [https://scotch.io/tag/laravel](https://scotch.io/tag/laravel)
+* [laravel 视频教程](https://laravist.com)
 
 ### 博客
 
