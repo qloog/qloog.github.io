@@ -123,7 +123,7 @@ tags: 日志 awk
 	#时间段查询日志时间段的情况
 	cat log_file | egrep '15/Aug/2015|16/Aug/2015' |awk '{print $1}'|sort|uniq -c|sort -nr|head -10 
  
- 	#分析2015/8/15 到 2015/8/16 访问"/index.phpg=Member&m=Public&a=sendValidCode"的IP倒序排列
+	#分析2015/8/15 到 2015/8/16 访问"/index.phpg=Member&m=Public&a=sendValidCode"的IP倒序排列
 	cat log_file | egrep '15/Aug/2015|16/Aug/2015' | awk '{if($7 == "/index.php?g=Member&m=Public&a=sendValidCode") print $1,$7}'|sort|uniq -c|sort -nr 
 
 	#($7~/\.php/) $7里面包含.php的就输出,本句的意思是最耗时的一百个PHP页面
