@@ -9,7 +9,7 @@ tags: 日志 awk
 
 1、查看有多少个IP访问：
 
- 	awk '{print $1}' log_file|sort|uniq|wc -l   # wc -l 看看有多少行
+	awk '{print $1}' log_file|sort|uniq|wc -l   # wc -l 看看有多少行
  	
 2、查看某一个页面被访问的次数：
 
@@ -46,11 +46,11 @@ tags: 日志 awk
 	
 9、访问次数最多的10个文件或页面
 
- 	cat log_file|awk '{print $11}'|sort|uniq -c|sort -nr | head -10
+	cat log_file|awk '{print $11}'|sort|uniq -c|sort -nr | head -10
  
- 	cat log_file|awk '{print $11}'|sort|uniq -c|sort -nr|head -20 
+	cat log_file|awk '{print $11}'|sort|uniq -c|sort -nr|head -20 
  
- 	awk '{print $1}' log_file |sort -n -r |uniq -c | sort -n -r | head -20 # 访问量最大的前20个ip
+	awk '{print $1}' log_file |sort -n -r |uniq -c | sort -n -r | head -20 # 访问量最大的前20个ip
  	
 10、通过子域名访问次数，依据referer来计算，稍有不准
 
