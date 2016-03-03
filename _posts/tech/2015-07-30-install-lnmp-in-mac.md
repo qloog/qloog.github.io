@@ -48,6 +48,35 @@ brew常用选项
 
 	xcode-select --install  # 弹窗提示后，点击“安装”即可
 	
+PS: 如果在编译过程中出现类似以下问题：
+
+	==> ./configure --prefix=/usr/local/Cellar/php55/5.5.32 --localstatedir=/usr/local/var --sysconfdir=
+	Last 15 lines from /Users/qloog/Library/Logs/Homebrew/php55/01.configure:
+	checking for Kerberos support... /usr
+	checking for krb5-config... /usr/bin/krb5-config
+	checking for DSA_get_default_method in -lssl... no
+	checking for X509_free in -lcrypto... yes
+	checking for RAND_egd... no
+	checking for pkg-config... no
+	checking for OpenSSL version... >= 0.9.6
+	checking for CRYPTO_free in -lcrypto... yes
+	checking for SSL_CTX_set_ssl_version in -lssl... yes
+	checking for PCRE library to use... bundled
+	checking whether to enable the SQLite3 extension... yes
+	checking bundled sqlite3 library... yes
+	checking for ZLIB support... yes
+	checking if the location of ZLIB install directory is defined... no
+	configure: error: Cannot find libz
+	
+	READ THIS: https://git.io/brew-troubleshooting
+	If reporting this issue please do so at (not Homebrew/homebrew):
+	  https://github.com/josegonzalez/homebrew-php/issues
+	  
+主要是`configure: error: Cannot find libz` 错误，执行`xcode-select --install` 重新安装一下Xcode Command Line Tools   
+在[GitHub HomeBrew](https://github.com/Homebrew/homebrew-php/issues/1181)上有关于这个讨论:
+
+	For future reference of anybody looking for Command Line Tools with Xcode 5, open up a Terminal window and type xcode-select --install. A window will appear informing you command line tools are required. Click Install and you should be good to go
+	
 ## Apache || Nginx
 
 ### Apache
