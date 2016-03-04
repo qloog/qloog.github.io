@@ -48,37 +48,6 @@ brew常用选项
 
 	xcode-select --install  # 弹窗提示后，点击“安装”即可
 	
-PS: 如果在编译过程中出现类似以下问题：
-
-	==> ./configure --prefix=/usr/local/Cellar/php55/5.5.32 --localstatedir=/usr/local/var --sysconfdir=
-	Last 15 lines from /Users/qloog/Library/Logs/Homebrew/php55/01.configure:
-	checking for Kerberos support... /usr
-	checking for krb5-config... /usr/bin/krb5-config
-	checking for DSA_get_default_method in -lssl... no
-	checking for X509_free in -lcrypto... yes
-	checking for RAND_egd... no
-	checking for pkg-config... no
-	checking for OpenSSL version... >= 0.9.6
-	checking for CRYPTO_free in -lcrypto... yes
-	checking for SSL_CTX_set_ssl_version in -lssl... yes
-	checking for PCRE library to use... bundled
-	checking whether to enable the SQLite3 extension... yes
-	checking bundled sqlite3 library... yes
-	checking for ZLIB support... yes
-	checking if the location of ZLIB install directory is defined... no
-	configure: error: Cannot find libz
-	
-	READ THIS: https://git.io/brew-troubleshooting
-	If reporting this issue please do so at (not Homebrew/homebrew):
-	  https://github.com/josegonzalez/homebrew-php/issues
-	  
-主要是 `configure: error: Cannot find libz` 错误，执行 `xcode-select --install` 重新安装一下Xcode Command Line Tools   
-在[GitHub HomeBrew](https://github.com/Homebrew/homebrew-php/issues/1181)上有关于这个讨论:
-
-	For future reference of anybody looking for Command Line Tools with Xcode 5, open up a Terminal window and type   
-	xcode-select  --install. A window will appear informing you command line tools are required. Click Install and   
-	you should be good to go
-	
 ## Apache || Nginx
 
 ### Apache
@@ -110,25 +79,32 @@ Apache的话使用mac自带的基本就够了，我的系统是10.9+，可以使
 要使用Nginx也比较方便，首先安装
 
 	brew install nginx
+	
+#### Nginx启动关闭命令：
 
-如果想开机就启动nginx，可以运行下面命令：
+	#测试配置是否有语法错误
+	nginx -t
+	
+	#打开 nginx （如果想要监听80端口，必须以管理员身份运行）
+	sudo nginx
+	
+	#重新加载配置|重启|停止|退出 nginx
+	nginx -s reload|reopen|stop|quit
+	
+	#也可以使用Mac的launchctl来启动|停止
+	launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+	launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+
+
+#### Nginx开机启动
 
 	mkdir -p ~/Library/LaunchAgents
 	ln -sfv /usr/local/opt/nginx/*.plist ~/Library/LaunchAgents
 	
-想立马run nginx的话，也可以手动执行：
+#### Nginx监听80端口需要root权限执行
 
 	launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 	sudo chown root:wheel ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
-
-如果对launchctl不是太熟悉的话，也可以这么玩：（如果想要监听80端口，必须以管理员身份运行）
-
-	#启动 nginx
-	sudo nginx
-	#重新加载配置|重启|停止|退出 nginx
-	nginx -s reload|reopen|stop|quit
-	#测试配置是否有语法错误
-	nginx -t
 
 update:
 
@@ -151,7 +127,7 @@ update:
 
 	http://localhost:8080  或者  http://localhost:80
 
-配置Nginx
+#### 配置Nginx
 
 	cd /usr/local/etc/nginx/
 	mkdir conf.d
@@ -189,11 +165,11 @@ update:
 	    include /usr/local/etc/nginx/conf.d/*.conf;
 	}
 	
-修改自定义文件
+#### 修改自定义文件
 
 	vim ./conf.d/default.conf
 	
-增加一个监听端口
+#### 增加一个监听端口
 
 	server {
 	    listen       80;
@@ -224,6 +200,37 @@ PHP在mac下默认安装了，但是不好控制版本，利用brew可以再mac�
 	brew install php55 --without-apache --with-fpm --with-mysql  #for Nginx
 	#brew install php55 #for Apache
 	
+PS: 如果在编译过程中出现类似以下问题：
+
+	==> ./configure --prefix=/usr/local/Cellar/php55/5.5.32 --localstatedir=/usr/local/var --sysconfdir=
+	Last 15 lines from /Users/qloog/Library/Logs/Homebrew/php55/01.configure:
+	checking for Kerberos support... /usr
+	checking for krb5-config... /usr/bin/krb5-config
+	checking for DSA_get_default_method in -lssl... no
+	checking for X509_free in -lcrypto... yes
+	checking for RAND_egd... no
+	checking for pkg-config... no
+	checking for OpenSSL version... >= 0.9.6
+	checking for CRYPTO_free in -lcrypto... yes
+	checking for SSL_CTX_set_ssl_version in -lssl... yes
+	checking for PCRE library to use... bundled
+	checking whether to enable the SQLite3 extension... yes
+	checking bundled sqlite3 library... yes
+	checking for ZLIB support... yes
+	checking if the location of ZLIB install directory is defined... no
+	configure: error: Cannot find libz
+	
+	READ THIS: https://git.io/brew-troubleshooting
+	If reporting this issue please do so at (not Homebrew/homebrew):
+	  https://github.com/josegonzalez/homebrew-php/issues
+	  
+主要是 `configure: error: Cannot find libz` 错误，执行 `xcode-select --install` 重新安装一下Xcode Command Line Tools   
+在[GitHub HomeBrew](https://github.com/Homebrew/homebrew-php/issues/1181)上有关于这个讨论:
+
+	For future reference of anybody looking for Command Line Tools with Xcode 5, open up a Terminal window and type   
+	xcode-select  --install. A window will appear informing you command line tools are required. Click Install and   
+	you should be good to go
+	
 安装成功后提示：
 
 	＃To have launchd start php55 at login:
@@ -232,6 +239,20 @@ PHP在mac下默认安装了，但是不好控制版本，利用brew可以再mac�
     	
 	＃Then to load php55 now:
     	launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
+    	
+等待PHP编译完成，开始安装PHP常用扩展，扩展安装过程中brew会自动安装依赖包，例如php55-pdo-pgsql 会自动装上postgresql,这里我安装以下PHP扩展：
+
+	brew install php55-memcache
+	brew install php55-memcached
+	brew install php55-redis
+	brew install php55-mongo
+	brew install php55-xdebug
+	brew install php55-mcrypt    #Laravel 框架依赖此扩展
+	brew install php55-xhprof    #php性能分析工具
+	brew install php55-gearman 
+	brew install php55-msgpack 
+	brew install php55-phalcon   #一个是C语言写的PHP框架
+
 	
 由于Mac自带了php和php-fpm，因此需要添加系统环境变量PATH来替代自带PHP版本。
 
@@ -269,46 +290,50 @@ PHP在mac下默认安装了，但是不好控制版本，利用brew可以再mac�
 	PHP 5.5.30 (fpm-fcgi) (built: Oct 23 2015 17:22:03)
 	Copyright (c) 1997-2015 The PHP Group
 	Zend Engine v2.5.0, Copyright (c) 1998-2015 Zend Technologies
-
-
 	
+修改php-fpm配置文件，`vim /usr/local/etc/php/5.5/php-fpm.conf`，找到pid相关大概在25行，去掉注释 pid = run/php-fpm.pid, 那么php-fpm的pid文件就会自动产生在 `/usr/local/var/run/php-fpm.pid`，下面要安装的Nginx pid文件也放在这里。
+
+	#测试php-fpm配置
+	php-fpm -t
+	php-fpm -c /usr/local/etc/php/5.5/php.ini -y /usr/local/etc/php/5.5/php-fpm.conf -t
+	
+	#启动php-fpm
+	php-fpm -D
+	php-fpm -c /usr/local/etc/php/5.5/php.ini -y /usr/local/etc/php/5.5/php-fpm.conf -D
+	
+	#关闭php-fpm
+	kill -INT `cat /usr/local/var/run/php-fpm.pid`
+	
+	#重启php-fpm
+	kill -USR2 `cat /usr/local/var/run/php-fpm.pid`
+	
+	#也可以用上文提到的brew命令来重启php-fpm，不过他官方不推荐用这个命令了
+	brew services restart php55
+	
+	#还可以用这个命令来启动php-fpm
+	launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
+	
+启动php-fpm之后，确保它正常运行监听9000端口：
+
+	lsof -Pni4 | grep LISTEN | grep php
+	php-fpm   79812 qloog    6u  IPv4 0xcee975aa333a6905      0t0  TCP 127.0.0.1:9000 (LISTEN)
+	php-fpm   79859 qloog    0u  IPv4 0xcee975aa333a6905      0t0  TCP 127.0.0.1:9000 (LISTEN)
+	php-fpm   80386 qloog    0u  IPv4 0xcee975aa333a6905      0t0  TCP 127.0.0.1:9000 (LISTEN)
+	php-fpm   80387 qloog    0u  IPv4 0xcee975aa333a6905      0t0  TCP 127.0.0.1:9000 (LISTEN)
+	php-fpm   80388 qloog    0u  IPv4 0xcee975aa333a6905      0t0  TCP 127.0.0.1:9000 (LISTEN)
+	php-fpm   82068 qloog    0u  IPv4 0xcee975aa333a6905      0t0  TCP 127.0.0.1:9000 (LISTEN)
+	#正常情况，会看到上面这些进程
+
+PHP-FPM开机启动：
+
+	ln -sfv /usr/local/opt/php55/*.plist ~/Library/LaunchAgents
+	launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
+
 如果是apache就用刚刚安装的php代替了系统默认cli的php版本。然后在/etc/apache2/httpd.conf下增加
 
 	LoadModule php5_module /usr/local/Cellar/php55/5.5.15/libexec/apache2/libphp5.so
 	
 这样就对apache使用的php版本也进行了修改。
-
-后面会用到mongo和memcache等，所以可以直接利用下面命令安装php模块，其他模块也类似
-
-	brew install php55-memcache
-	brew install php55-memcached
-	brew install php55-redis
-	brew install php55-mongo
-	brew install php55-xdebug
-	brew install php55-mcrypt    #Laravel 框架依赖此扩展
-	brew install php55-xhprof    #php性能分析工具
-	brew install php55-gearman 
-	brew install php55-msgpack 
-	brew install php55-phalcon
-	
-那么安装后如何对php进行管理呢(这里主要是重启操作)，可以制作一个脚本来管理（/usr/local/etc/php/fpm-restart）：
-
-	#!/bin/sh
-
-	echo "Stopping php-fpm..."
-	launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
-	
-	echo "Starting php-fpm..."
-	launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
-	
-	echo "php-fpm restarted"
-	exit 0
-	
-然后：
-
-	chmod ug+x /usr/local/etc/php/fpm-restart
-	cd /usr/local/sbin
-	ln -s /usr/local/etc/php/fpm-restart
 	
 ## MySQL
 
@@ -344,6 +369,30 @@ mac不自带mysql，这里需要重新安装，方法依然很简单
 	[mysqld]
 	general-log
 	general_log_file = /usr/local/var/log/mysqld.log
+	
+检查MySQL运行情况
+
+	➜  ~ ps aux | grep mysql
+	qloog             488   0.0  0.0  3121804   2712   ??  S    22Feb16   1:25.50 /usr/local/Cellar/mysql/5.6.20/bin/mysqld --basedir=/usr/local/Cellar/mysql/5.6.20 --datadir=/usr/local/var/mysql --plugin-dir=/usr/local/Cellar/mysql/5.6.20/lib/plugin --bind-address=127.0.0.1 --log-error=/usr/local/var/mysql/qloogdeMacBook-Pro.local.err --pid-file=/usr/local/var/mysql/qloogdeMacBook-Pro.local.pid
+	
+测试连接MySQL
+
+	➜  ~ mysql -uroot -p
+	Warning: Using a password on the command line interface can be insecure.
+	Enter password:
+	Welcome to the MySQL monitor.  Commands end with ; or \g.
+	Your MySQL connection id is 43
+	Server version: 5.6.20 Homebrew
+	
+	Copyright (c) 2000, 2014, Oracle and/or its affiliates. All rights reserved.
+	
+	Oracle is a registered trademark of Oracle Corporation and/or its
+	affiliates. Other names may be trademarks of their respective
+	owners.
+	
+	Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+	
+	mysql>
 	
 ## Memcache
 
