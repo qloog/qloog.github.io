@@ -291,7 +291,7 @@ PS: 如果在编译过程中出现类似以下问题：
 	Copyright (c) 1997-2015 The PHP Group
 	Zend Engine v2.5.0, Copyright (c) 1998-2015 Zend Technologies
 	
-修改php-fpm配置文件，`vim /usr/local/etc/php/5.5/php-fpm.conf`，找到pid相关大概在25行，去掉注释 pid = run/php-fpm.pid, 那么php-fpm的pid文件就会自动产生在 `/usr/local/var/run/php-fpm.pid`，下面要安装的Nginx pid文件也放在这里。
+修改php-fpm配置文件，`vim /usr/local/etc/php/5.5/php-fpm.conf`，找到pid相关大概在25行，去掉注释 pid = run/php-fpm.pid, 那么php-fpm的pid文件就会自动产生在 `/usr/local/var/run/php-fpm.pid`，Nginx pid文件也是放在这里的。
 
 	#测试php-fpm配置
 	php-fpm -t
