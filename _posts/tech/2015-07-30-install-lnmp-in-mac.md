@@ -6,7 +6,7 @@ date: 2015-07-30
 tags: Mac LNMP
 ---
 
-Mac下搭建lamp开发环境很容易，有xampp和mamp现成的集成环境。但是集成环境对于经常需要自定义一些配置的开发者来说会非常麻烦，而且Mac本身自带apache和php，在brew的帮助下非常容易手动搭建，可控性很高
+Mac下搭建lamp开发环境很容易，有xampp和mamp现成的集成环境。但是集成环境对于经常需要自定义一些配置的开发者来说会非常麻烦，而且Mac本身自带apache和php，在brew的帮助下非常容易手动搭建，可控性很高。
 
 ## Brew
 
@@ -32,10 +32,10 @@ brew（意为酿酒）的命名很有意思，全部都使用了酿酒过程中�
 
 因此使用Homebrew常见的流程是：
 
- 1. 增加一个程序源（新增一个水龙头） brew tap homebrew/php
- 2. 更新程序源 brew update
- 3. 安装程序包（按照配方酿酒） brew install git
- 4. 查看配置 brew config 可以看到程序包默认安装在/usr/local/Cellar下 （酒桶放在地窖内）
+ 1. 增加一个程序源（新增一个水龙头） `brew tap homebrew/php`
+ 2. 更新程序源 `brew update`
+ 3. 安装程序包（按照配方酿酒） `brew install git`
+ 4. 查看配置 `brew config` 可以看到程序包默认安装在 `/usr/local/Cellar` 下 （酒桶放在地窖内）
 	
 brew常用选项
 
@@ -72,16 +72,18 @@ PS: 如果在编译过程中出现类似以下问题：
 	If reporting this issue please do so at (not Homebrew/homebrew):
 	  https://github.com/josegonzalez/homebrew-php/issues
 	  
-主要是`configure: error: Cannot find libz` 错误，执行`xcode-select --install` 重新安装一下Xcode Command Line Tools   
+主要是 `configure: error: Cannot find libz` 错误，执行 `xcode-select --install` 重新安装一下Xcode Command Line Tools   
 在[GitHub HomeBrew](https://github.com/Homebrew/homebrew-php/issues/1181)上有关于这个讨论:
 
-	For future reference of anybody looking for Command Line Tools with Xcode 5, open up a Terminal window and type xcode-select --install. A window will appear informing you command line tools are required. Click Install and you should be good to go
+	For future reference of anybody looking for Command Line Tools with Xcode 5, open up a Terminal window and type   
+	xcode-select  --install. A window will appear informing you command line tools are required. Click Install and   
+	you should be good to go
 	
 ## Apache || Nginx
 
 ### Apache
 
-Apache的话使用mac自带的基本就够了，我的系统是10.9，可以使用以下命令控制Apache
+Apache的话使用mac自带的基本就够了，我的系统是10.9+，可以使用以下命令控制Apache
 
 	sudo apachectl start
 	sudo apachectl restart
@@ -103,7 +105,7 @@ Apache的话使用mac自带的基本就够了，我的系统是10.9，可以使�
 	
 这样sites目录就是网站根目录了，代码都往这个下头丢
 
-### Nginx
+### Nginx(推荐)
 
 要使用Nginx也比较方便，首先安装
 
@@ -121,7 +123,7 @@ Apache的话使用mac自带的基本就够了，我的系统是10.9，可以使�
 
 如果对launchctl不是太熟悉的话，也可以这么玩：（如果想要监听80端口，必须以管理员身份运行）
 
-	#打开 nginx
+	#启动 nginx
 	sudo nginx
 	#重新加载配置|重启|停止|退出 nginx
 	nginx -s reload|reopen|stop|quit
@@ -213,24 +215,14 @@ update:
 	
 	}
 	
-这个时候还不能访问php站点，因为还没有开启php-fpm。
-
-虽然mac 10.9自带了php-fpm，但是由于我们使用了最新的PHP，PHP中自带php-fpm，所以使用PHP中的php-fpm可以保证版本的一致。
-
-这里的命令在安装完下一步的php后再执行
-
-sudo nginx
-sudo php-fpm -D
-
+这个时候还不能访问php站点，因为还没有开启php-fpm。继续PHP的安装...
 
 ## PHP
 
 PHP在mac下默认安装了，但是不好控制版本，利用brew可以再mac下安装最新版本，甚至是多个版本，我装了php5.5
 
-	brew tap homebrew/dupes
-	brew tap josegonzalez/homebrew-php
-	brew install --without-apache --with-fpm --with-mysql php55 #Nginx
-	#brew install php55 #Apache
+	brew install php55 --without-apache --with-fpm --with-mysql  #for Nginx
+	#brew install php55 #for Apache
 	
 安装成功后提示：
 
@@ -241,14 +233,44 @@ PHP在mac下默认安装了，但是不好控制版本，利用brew可以再mac�
 	＃Then to load php55 now:
     	launchctl load ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
 	
-然后修改php的cli路径和apache使用的php模块。在~/.bash_profile或.zshrc里头加以下内容
+由于Mac自带了php和php-fpm，因此需要添加系统环境变量PATH来替代自带PHP版本。
 
-	#export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH" 
-	export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-	#执行下面命令后，新的php版本生效
+	echo 'export PATH="$(brew --prefix php55)/bin:$PATH"' >> ~/.bash_profile  #for php
+	echo 'export PATH="$(brew --prefix php55)/sbin:$PATH"' >> ~/.bash_profile  #for php-fpm
+	echo 'export PATH="/usr/local/bin:/usr/local/sbib:$PATH"' >> ~/.bash_profile #for other brew install soft
 	source ~/.bash_profile
 	#或者
 	source ~/.zshrc
+	
+测试一下效果：
+
+	#brew安装的php 他在/usr/local/opt/php55/bin/php
+	php -v    
+	HP 5.5.32 (cli) (built: Mar  3 2016 14:07:53)
+	Copyright (c) 1997-2015 The PHP Group
+	Zend Engine v2.5.0, Copyright (c) 1998-2015 Zend Technologies
+	    with Xdebug v2.2.5, Copyright (c) 2002-2014, by Derick Rethans
+	
+	#Mac自带的PHP
+	/usr/bin/php -v   
+	PHP 5.5.30 (cli) (built: Oct 23 2015 17:21:45)
+	Copyright (c) 1997-2015 The PHP Group
+	Zend Engine v2.5.0, Copyright (c) 1998-2015 Zend Technologies
+	
+	#brew安装的php-fpm 他在/usr/local/opt/php55/sbin/php-fpm
+	php-fpm -v
+	PHP 5.5.32 (fpm-fcgi) (built: Mar  3 2016 14:07:54)
+	Copyright (c) 1997-2015 The PHP Group
+	Zend Engine v2.5.0, Copyright (c) 1998-2015 Zend Technologies
+	    with Xdebug v2.2.5, Copyright (c) 2002-2014, by Derick Rethans
+	
+	#Mac自带的php-fpm
+	/usr/sbin/php-fpm -v
+	PHP 5.5.30 (fpm-fcgi) (built: Oct 23 2015 17:22:03)
+	Copyright (c) 1997-2015 The PHP Group
+	Zend Engine v2.5.0, Copyright (c) 1998-2015 Zend Technologies
+
+
 	
 如果是apache就用刚刚安装的php代替了系统默认cli的php版本。然后在/etc/apache2/httpd.conf下增加
 
