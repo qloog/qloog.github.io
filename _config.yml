@@ -12,7 +12,7 @@ url: http://lnmp100.com
 baseurl:  "/"
 domain:    lnmp100.com
 permalink:     /:year/:month/:day/:title.html
-paginate_path: 'page/:num'
+paginate_path: 'page:num'
 paginate:   10
 source_code: https://github.com/qloog/qloog.github.io
 
