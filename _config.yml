@@ -42,8 +42,8 @@ gems:
 disqus:
   id: lnmp100
 
-#google:
-#    analytics_id: UA-55452630-1
+google:
+    analytics_id: UA-27269744-1
 
 # navigation
 navs:
