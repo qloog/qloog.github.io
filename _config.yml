@@ -3,7 +3,7 @@ name: qloog
 email: quanlongwang@gmail.com
 description: PHP工程师，从事web相关的开发工作。开源爱好者，GitHub:https://github.com/qloog。
 keywords: Laravel
-skill_keywords: [PHP, Javascript, HTML+CSS, Linux, Laravel, Git, Mac, RESTful, Stackoverflow, Sublime Text, OmniGaffale, OminiPlan]
+skill_keywords: [PHP, MySQL, Linux, Laravel, Javascript, HTML+CSS, Git, Mac, VIM, RESTful, Stackoverflow, PHPStorm, OmniGaffale, OminiPlan]
 
 timezone:    PRC
 encoding: "utf-8"
@@ -12,7 +12,7 @@ url: http://lnmp100.com
 baseurl:  "/"
 domain:    lnmp100.com
 permalink:     /:year/:month/:day/:title.html
-paginate_path: 'page:num'
+paginate_path: 'page/:num'
 paginate:   10
 source_code: https://github.com/qloog/qloog.github.io
 
@@ -69,5 +69,5 @@ navs:
     href: /about
     label: About
 
-popular_repos: ['pinyin', 'wechat', 'writor', 'laravel-wechat', 'laravel-lang', 'laravel-pinyin', 'latest-laravel', 'latest-lumen']
-contribute_repos: ['laravel/framework', 'tymondesigns/jwt-auth', 'caouecs/Laravel-lang']
+popular_repos: ['laravel5-backend']
+#contribute_repos: ['laravel/framework', 'tymondesigns/jwt-auth', 'caouecs/Laravel-lang']

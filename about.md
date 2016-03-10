@@ -5,7 +5,7 @@ menu: About
 ---
 {% assign current_year = site.time | date: '%Y' %}
 
-qloog
+Qloog
 ===
 男 85后
 
@@ -16,7 +16,7 @@ qloog
 
 计算机专业毕业，{{ current_year | minus: 2009 }} 年 web 开发经验。
 
-## keywords
+## Keywords
 <div class="btn-inline">
 {% for keyword in site.skill_keywords %} <button class="btn btn-outline" type="button">{{ keyword }}</button> {% endfor %}
 </div>
