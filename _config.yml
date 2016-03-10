@@ -1,45 +1,73 @@
-permalink: /:year/:month/:day/:title.html
-markdown: kramdown
-highlighter: rouge
+title: LNMP100实验室 
+name: qloog
+email: quanlongwang@gmail.com
+description: PHP工程师，从事web相关的开发工作。开源爱好者，GitHub:https://github.com/qloog。
+keywords: Laravel
+skill_keywords: [PHP, Javascript, HTML+CSS, Linux, Laravel, Git, Mac, RESTful, Stackoverflow, Sublime Text, OmniGaffale, OminiPlan]
+
+timezone:    PRC
+encoding: "utf-8"
+
+url: http://lnmp100.com
+baseurl:  "/"
+domain:    lnmp100.com
+permalink:     /:year/:month/:day/:title.html
+paginate_path: 'page:num'
+paginate:   10
+source_code: https://github.com/qloog/qloog.github.io
+
+# Build settings
+markdown:    kramdown
+highlighter: pygments
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
 
 kramdown:
   input: GFM
+  enable_coderay: true
 
-# 作者信息
-author: 
-  name: 如来神掌
-  email: quanlongwang@gmail.com
-  link: http://lnmp100.com
-  github: http://github.com/qloog
+gems:
+  - jemoji
+  - rouge
+  # # # - jekyll-mentions
+  # - jekyll-sitemap
+  - jekyll-html-pipeline
 
-# 站点信息
-title: LNMP100实验室 
-description: LNMP100实验室
-url: http://lnmp100.com
-rss_url: /pages/atom.xml
-
-# avatar头像及Favicon
-avatar: http://www.lnmp100.com/assets/img/minion.png
-favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
-
-# google analytics 设置
-# ga:
-#   id: UA-54767140-1
-#   url: yansu.org
-
-# disqus 设置
 disqus:
-  shortname: lnmp100
+  id: lnmp100
+
+#google:
+#    analytics_id: UA-55452630-1
+
+# navigation
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /open-source
+    label: Open-Source
+
+  -
+    href: https://github.com/qloog
+    label: GitHub
+    target: _blank
 
 
-# Sidebar filter
-# Choose 'tag' or 'category' as filter in sidebar.
-# filter: 'category'
+  -
+    href: /bookmark
+    label: Bookmark
 
+  -
+    href: /about
+    label: About
 
-# Social account
-# twitter:  username
-# weibo:    ID
-github:   qloog
-# codepen:  username
-# dribbble: username
+popular_repos: ['pinyin', 'wechat', 'writor', 'laravel-wechat', 'laravel-lang', 'laravel-pinyin', 'latest-laravel', 'latest-lumen']
+contribute_repos: ['laravel/framework', 'tymondesigns/jwt-auth', 'caouecs/Laravel-lang']

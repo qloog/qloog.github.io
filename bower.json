@@ -1,0 +1,29 @@
+{
+  "name": "overtrue.github.io",
+  "description": "overtrue blog",
+  "main": "",
+  "authors": [
+    "overtrue <anzhengchao@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "overtrue",
+    "blog"
+  ],
+  "homepage": "https://github.com/overtrue/overtrue.github.io",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "octicons": "*",
+    "primer-markdown": "*",
+    "primer-css": "~2.1.0",
+    "share.js": "overtrue-share.js#*",
+    "jquery": "~2.1.4"
+  }
+}
