@@ -9,7 +9,7 @@ timezone:    PRC
 encoding: "utf-8"
 
 url: http://lnmp100.com
-baseurl:  "/"
+baseurl:  ""
 domain:    lnmp100.com
 permalink:     /:year/:month/:day/:title.html
 paginate_path: 'page/:num'
