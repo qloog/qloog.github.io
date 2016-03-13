@@ -60,10 +60,13 @@ navs:
     label: GitHub
     target: _blank
 
-
   -
     href: /bookmark
     label: Bookmark
+
+  -
+    href: /manual
+    label: Manual
 
   -
     href: /about
