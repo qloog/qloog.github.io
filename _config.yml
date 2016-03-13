@@ -80,3 +80,4 @@ navs:
 
 popular_repos: ['laravel5-backend']
 #contribute_repos: ['laravel/framework', 'tymondesigns/jwt-auth', 'caouecs/Laravel-lang']
+resource_recommend: ['2015/07/16/blog-collection.html']
