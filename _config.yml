@@ -3,7 +3,13 @@ name: LNMP100实验室
 email: quanlongwang@gmail.com
 description: PHP工程师，从事web相关的开发工作。开源爱好者，GitHub:https://github.com/qloog。
 keywords: Laravel
-skill_keywords: [PHP, MySQL, Linux, Laravel, Javascript, HTML+CSS, Git, Mac, VIM, RESTful, Stackoverflow, PHPStorm, OmniGaffale, OminiPlan]
+skill_keywords: [
+    PHP, MySQL, Linux, Laravel, Redis, Memcache, 
+    JavaScript, HTML+CSS, 
+    Mac, Git, VIM, PHPStorm, Composer, 
+    RESTful, Stackoverflow, 
+    OmniGaffale, OminiPlan
+]
 
 timezone:    PRC
 encoding: "utf-8"
