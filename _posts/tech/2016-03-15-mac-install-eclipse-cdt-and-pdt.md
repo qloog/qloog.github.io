@@ -6,6 +6,7 @@ date: 2016-03-15
 tags: Eclipse PDT CDT
 ---
 
+
 在开发PHP 扩展的时候，十有八九会开发PHP，这样的话就可能会在PHP和C之间来回切换。
 如果用IDE开发的话，可能会C一个IDE(Eclipse IDE for C/C++ Developers 或 Clion)，
 PHP一个IDE(Eclipse for PHP Developers 或 PHPStorm)，这样的话可能就需要装两套IDE，
