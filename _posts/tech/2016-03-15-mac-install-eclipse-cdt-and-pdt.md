@@ -25,9 +25,9 @@ PHP一个IDE(Eclipse for PHP Developers 或 PHPStorm)，这样的话可能就需
 
 ## 安装Eclipse PHP开发环境 (PDT)
 
- 下载地址：http://www.eclipse.org/pdt/index.html
+ 下载地址：`http://www.eclipse.org/pdt/index.html`
 
- 步骤： 在Eclipse, 菜单： Help -> Install New Software 在 work with 输入安装源： http://download.eclipse.org/tools/pdt/updates/3.7
+ 步骤： 在Eclipse, 菜单： Help -> Install New Software 在 work with 输入安装源： `http://download.eclipse.org/tools/pdt/updates/3.7`
 
 ![PDT](/static/uploads/2016/03/eclipse_pdt_install.png)
 
@@ -36,7 +36,7 @@ PHP一个IDE(Eclipse for PHP Developers 或 PHPStorm)，这样的话可能就需
 
 下载地址：https://eclipse.org/cdt/downloads.php
 
-步骤： 在Eclipse, 菜单： Help -> Install New Software 在 work with 输入安装源： http://download.eclipse.org/tools/cdt/releases/8.8.1
+步骤： 在Eclipse, 菜单： Help -> Install New Software 在 work with 输入安装源： `http://download.eclipse.org/tools/cdt/releases/8.8.1`
 
 ![CDT](/static/uploads/2016/03/eclipse_cdt_install.png)
 
