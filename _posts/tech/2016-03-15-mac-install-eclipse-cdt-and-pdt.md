@@ -29,7 +29,7 @@ PHP一个IDE(Eclipse for PHP Developers 或 PHPStorm)，这样的话可能就需
 
  步骤： 在Eclipse, 菜单： Help -> Install New Software 在 work with 输入安装源： http://download.eclipse.org/tools/pdt/updates/3.7
 
-![PDT](/staitc/uploads/2016/03/eclipse_pdt_install.png)
+![PDT](/static/uploads/2016/03/eclipse_pdt_install.png)
 
 
 ## 安装C开发环境 (CDT)
@@ -38,12 +38,14 @@ PHP一个IDE(Eclipse for PHP Developers 或 PHPStorm)，这样的话可能就需
 
 步骤： 在Eclipse, 菜单： Help -> Install New Software 在 work with 输入安装源： http://download.eclipse.org/tools/cdt/releases/8.8.1
 
-![CDT](/staitc/uploads/2016/03/eclipse_cdt_install.png)
+![CDT](/static/uploads/2016/03/eclipse_cdt_install.png)
 
 
 如果不想太麻烦，也可以通过一个安装源: http://download.eclipse.org/releases/indigo/ 来安装PDT  CDT
-![ONE-PDT](/staitc/uploads/2016/03/eclipse_pdt_from_one.png)
-![ONE-CDT](/staitc/uploads/2016/03/eclipse_cdt_from_one.png)
+
+![ONE-PDT](/static/uploads/2016/03/eclipse_pdt_from_one.png)
+
+![ONE-CDT](/static/uploads/2016/03/eclipse_cdt_from_one.png)
 
 
 
