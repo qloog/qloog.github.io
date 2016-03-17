@@ -41,7 +41,11 @@ PHP一个IDE(Eclipse for PHP Developers 或 PHPStorm)，这样的话可能就需
 ![CDT](/static/uploads/2016/03/eclipse_cdt_install.png)
 
 
+## 一次性安装
+
 如果不想太麻烦，也可以通过一个安装源: http://download.eclipse.org/releases/indigo/ 来安装PDT  CDT
+但是这个源不是最新的
+
 
 ![ONE-PDT](/static/uploads/2016/03/eclipse_pdt_from_one.png)
 
