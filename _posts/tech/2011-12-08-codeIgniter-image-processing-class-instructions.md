@@ -10,10 +10,10 @@ tages: CodeIgniter
 
 CI框架下路径：`system/libraries/Image_lib.php`  
 
-1、当$config['create_thumb']等于FALSE并且$config['new_image']没有指定时，会调整原图的大小
-2、当$config['create_thumb']等于TRUE并且$config['new_image']没有指定时，生成文件名为(原图名_thumb.扩展名)
-3、当$config['create_thumb']等于FALSE并且$config['new_image']指定时，生成文件名为$config['new_image']的值
-4、当$config['create_thumb']等于TRUE并且$config['new_image']指定时，生成文件名为(原图名_thumb.扩展名)
+1、当$config['create_thumb']等于FALSE并且$config['new_image']没有指定时，会调整原图的大小  
+2、当$config['create_thumb']等于TRUE并且$config['new_image']没有指定时，生成文件名为(原图名_thumb.扩展名)  
+3、当$config['create_thumb']等于FALSE并且$config['new_image']指定时，生成文件名为$config['new_image']的值  
+4、当$config['create_thumb']等于TRUE并且$config['new_image']指定时，生成文件名为(原图名_thumb.扩展名)  
     
     <?php
     
