@@ -23,9 +23,8 @@ Qloog
 #### 效率类
 
  * [iTerm2](https://www.iterm2.com/) Mac下开发神器
- * [oh-my-zsh](http://ohmyz.sh/)	配合上iTerm2, 简直就是最强组合 
+ * [oh-my-zsh](http://ohmyz.sh/)	配合上iTerm2, 简直就是最强组合
  * [OmniGraffle](http://www.omnigroup.com/omnigraffle) 专业绘图制表工具，推荐v6.0
- * [PhotoDesk](http://www.photodesk-app.com/)	Instagram 客户端，功能齐全
  * [Parallels Desktop](http://www.parallels.com/products/desktop/) 虚拟机，主要用于使用windows
 
 #### 开发类
@@ -36,6 +35,7 @@ Qloog
  * [Clion](https://www.jetbrains.com/clion)  C开发工具
  * [Sublime Text](http://www.sublimetext.com/)
  * [Sequel Pro MySQL](http://www.sequelpro.com/) 管理工具
+ * [Redis Desktop Manager](http://redisdesktop.com/) Cross-platform open source Redis DB management tool
  * Mou(mac)  Markdown 编辑器
 
 ## Keywords
