@@ -18,7 +18,7 @@ C是静态编译的，执行效率比PHP代码高很多。同样的运算代码�
 
 ##### From PHP官网 
 
-[官网下载地址](http://php.net/downloads.php)
+	http://php.net/downloads.php
 
 ##### From Git
 
@@ -34,7 +34,12 @@ C是静态编译的，执行效率比PHP代码高很多。同样的运算代码�
  2. 选择感兴趣的分支
  3. 点击 `Download ZIP` 即可
 
+这里以下载zip为例：
 
+	wget http://museum.php.net/php5/php-5.3.16.tar.gz
+	tar zxvf php-5.3.16.tar.gz
+	mv php-5.3.16 php-src
+	
 进入到PHP源码目录：
 
 	cd php-src	
