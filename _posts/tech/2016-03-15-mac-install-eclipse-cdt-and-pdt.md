@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mac安装Eclipse插件PDT和CDT
-category: Eclipse
+category: tech
 date: 2016-03-15
 tags: Eclipse PDT CDT
 ---
