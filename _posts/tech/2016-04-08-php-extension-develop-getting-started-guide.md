@@ -127,8 +127,8 @@ C是静态编译的，执行效率比PHP代码高很多。同样的运算代码�
 
 #### 第三步
 
-修改 `php_myext.h`，看到`PHP_FUNCTION(confirm_myext_compiled)` (在45行); 这里就是扩展函数声明部分，
-可以增加一行 `PHP_FUNCTION(myext_helloworld);`; 表示声明了一个myext_helloworld的扩展函数。 
+修改 `php_myext.h`，在45行找到`PHP_FUNCTION(confirm_myext_compiled)`, 这里就是扩展函数声明部分;  
+可以增加一行 `PHP_FUNCTION(myext_helloworld);`, 表示声明了一个myext_helloworld的扩展函数。 
 
 #### 第四步
 
