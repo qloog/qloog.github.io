@@ -4,11 +4,11 @@ email: quanlongwang@gmail.com
 description: LNMP100 GitHub:https://github.com/qloog。
 keywords: Laravel
 skill_keywords: [
-    PHP, MySQL, Linux, Laravel, Redis, Memcache, 
+    PHP, MySQL, Linux, Redis, Memcache, Laravel,
+    C, C扩展, Go, Docker
     JavaScript, HTML+CSS, 
     Mac, Git, VIM, PHPStorm, Composer, 
-    RESTful, Stackoverflow, 
-    OmniGaffale, OminiPlan
+    RESTful, Stackoverflow 
 ]
 
 timezone:    PRC

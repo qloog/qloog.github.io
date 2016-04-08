@@ -11,10 +11,14 @@ Qloog
 
 ## 概况
 
-- 邮箱：quanlongwang#gmail.com
 - 主页：[http://lnmp100.com](http://lnmp100.com)
 
-计算机专业毕业，{{ current_year | minus: 2009 }} 年 web 开发经验。
+计算机专业毕业，{{ current_year | minus: 2010 }} 年 web 开发经验。
+
+## Keywords
+<div class="btn-inline">
+{% for keyword in site.skill_keywords %} <button class="btn btn-outline" type="button">{{ keyword }}</button> {% endfor %}
+</div>
 
 ## 开发工具
 
@@ -38,10 +42,6 @@ Qloog
  * [Redis Desktop Manager](http://redisdesktop.com/) Cross-platform open source Redis DB management tool
  * Mou(mac)  Markdown 编辑器
 
-## Keywords
-<div class="btn-inline">
-{% for keyword in site.skill_keywords %} <button class="btn btn-outline" type="button">{{ keyword }}</button> {% endfor %}
-</div>
 
 ### 综合技能
 
