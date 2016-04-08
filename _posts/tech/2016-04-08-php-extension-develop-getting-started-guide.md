@@ -2,7 +2,7 @@
 layout: post
 title: PHP的C扩展开发入门之南
 category: tech
-date: 2016-04-08 15:49:55
+date: 2016-04-08
 tags: C PHP扩展
 ---
 
@@ -34,7 +34,7 @@ C是静态编译的，执行效率比PHP代码高很多。同样的运算代码�
  2. 选择感兴趣的分支
  3. 点击 `Download ZIP` 即可
 
-这里以下载zip为例：
+这里以zip为例：
 
 	wget http://museum.php.net/php5/php-5.3.16.tar.gz
 	tar zxvf php-5.3.16.tar.gz
@@ -44,17 +44,20 @@ C是静态编译的，执行效率比PHP代码高很多。同样的运算代码�
 
 	cd php-src	
 
-> 推荐使用 Git 
-
-	PHP 5.4: git checkout PHP-5.4 
-	PHP 5.5: git checkout PHP-5.5 
-	PHP 5.6: git checkout PHP-5.6 
-	PHP 7.0: git checkout PHP-7.0 
-	PHP HEAD: git checkout master
+> 若使用 Git  
+> 好处是方便切换不同版本
+>
+>	git clone http://git.php.net/repository/php-src.git
+>	
+>	PHP 5.4: git checkout PHP-5.4   
+>	PHP 5.5: git checkout PHP-5.5   
+>	PHP 5.6: git checkout PHP-5.6   
+>	PHP 7.0: git checkout PHP-7.0   
+>	PHP HEAD: git checkout master
 
 ## 生成扩展
 
-	cd php-src/ext
+	cd ext
 
 
 #### 第一步
