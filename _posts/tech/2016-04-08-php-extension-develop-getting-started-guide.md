@@ -89,9 +89,8 @@ C是静态编译的，执行效率比PHP代码高很多。同样的运算代码�
 	code and repeat the last two steps as often as necessary.
 
 
-查看生成的文件： `tree ext/myext`
+查看生成的文件： `tree myext`
 
-	myext/
 	|-- CREDITS
 	|-- EXPERIMENTAL
 	|-- config.m4
