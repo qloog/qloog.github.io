@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHP的C扩展开发入门之南
+title: PHP的C扩展开发入门指南
 category: tech
 date: 2016-04-08
 tags: C PHP扩展
@@ -184,6 +184,5 @@ C是静态编译的，执行效率比PHP代码高很多。同样的运算代码�
 
 ## 参考
 
-http://php.net/git.php  
-
-http://rango.swoole.com/archives/152
+ * [http://php.net/git.php](http://php.net/git.php)  
+ * [http://rango.swoole.com/archives/152](http://rango.swoole.com/archives/152)
