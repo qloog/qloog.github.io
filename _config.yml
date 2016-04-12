@@ -67,6 +67,10 @@ navs:
     target: _blank
 
   -
+    href: /archives
+    label: Archives
+
+  -
     href: /bookmark
     label: Bookmark
 
