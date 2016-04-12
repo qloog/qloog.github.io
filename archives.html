@@ -1,41 +1,36 @@
 ---
-layout: default
+layout: page
 title: 归档
 ---
 
-<div id="content">
-    <div class="text-post posts">
 
-        {% capture archives_year %}
-            {{ 'now' | date: '%Y' }}
-        {% endcapture %}
 
-        {% for post in site.posts %}
+<div class="text-center">
+    <header class="page-title">
+        <h1>Archives </h1>
+    </header>
+    <article class="content signle-column bg-white">
+        <div class="text-post posts">
 
-            {% capture post_year %}
-                {{ post.date | date: '%Y' }}
+            {% capture archives_year %}
+                {{ 'now' | date: '%Y' }}
             {% endcapture %}
 
-            {% if archives_year != post_year %}
-                {% assign archives_year = post_year %}
-                <h2>{{ archives_year }}</h2>
-            {% endif %}
+            {% for post in site.posts %}
 
-            {{ post.date | date: "%m-%d" }} - <a href="{{post.url}}">{{ post.title }}</a> </br>
+                {% capture post_year %}
+                    {{ post.date | date: '%Y' }}
+                {% endcapture %}
 
-        {% endfor %}
+                {% if archives_year != post_year %}
+                    {% assign archives_year = post_year %}
+                    <h2>{{ archives_year }}</h2>
+                {% endif %}
 
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+                {{ post.date | date: "%m-%d" }} - <a href="{{post.url}}">{{ post.title }}</a> </br>
 
+            {% endfor %}
 
-    </div>
+        </div>
+    </article>
 </div>
