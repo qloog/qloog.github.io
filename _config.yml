@@ -67,8 +67,8 @@ navs:
     target: _blank
 
   -
-    href: /archives
-    label: Archives
+    href: /archive
+    label: Archive
 
   -
     href: /bookmark
