@@ -1,5 +1,11 @@
-<h3>Categories</h3>
 
-{% for category in site.categories %}
-<h2>{{ category | first }}</h2> </span>{{ category | last | size }}</span> 
-{% endfor %}
+
+<div class="boxed-group flush" role="navigation">
+    <h3>Categories</h3>
+    <ul class="boxed-group-inner mini-repo-list">
+        {% for category in site.categories %}
+        <li><a href="/｛｛ category | first ｝｝.html">{{ category | first }}({{ category | last | size }})</a></li>
+        {% endfor %}
+
+    </ul>
+</div>

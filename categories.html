@@ -12,13 +12,15 @@ menu: category
     <article class="content signle-column bg-white">
         <div class="text-post posts">
 
-            分类：{{ page.category }}
-            文章数：</span>{{ site.categories[page.category] | size }}</span>
+            {% for category in site.categories %}
+            分类：<h2>{{ category | first }}</h2>
+            文章数：</span>{{ category | last | size }}</span>
             <ul class="arc-list">
-                {% for post in site.categories[page.category] %}
+                {% for post in category.last %}
                     <li>{{ post.date | date:"%Y-%d-%m"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
                 {% endfor %}
             </ul>
+            {% endfor %}
         </div>
     </article>
 </div>
