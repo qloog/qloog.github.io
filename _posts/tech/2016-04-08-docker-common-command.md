@@ -92,6 +92,6 @@ tags: docker
 
 ## more about docker
 
-	* [Docker —— 从入门到实践](http://wiki.jikexueyuan.com/list/docker/)
-	* [DOCKER 中文版](http://wiki.jikexueyuan.com/project/docker/)
-	* [Docker 实践](http://wiki.jikexueyuan.com/project/docker-practice/)
+ * [Docker —— 从入门到实践](http://wiki.jikexueyuan.com/list/docker/)
+ * [DOCKER 中文版](http://wiki.jikexueyuan.com/project/docker/)
+ * [Docker 实践](http://wiki.jikexueyuan.com/project/docker-practice/)
