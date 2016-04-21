@@ -162,4 +162,4 @@ demo-doc2.xml:
 
 注：索引文件（默认）会在 `CWD/solr/solr/data/index` 目录下，其修改的配置文件为：`/opt/solr/solr/conf/solrconfig.xml`
 
-关于更多的solr查询参数可参见：[solr查询参数说明](//380) 本文没有介绍到中文分词，以后会继续介绍中文分词库的安装和使用以及solr服务器的管理
+关于更多的solr查询参数可参见：[solr查询参数说明](/2011/12/31/the-solr-query-parameters.html) 本文没有介绍到中文分词，以后会继续介绍中文分词库的安装和使用以及solr服务器的管理
