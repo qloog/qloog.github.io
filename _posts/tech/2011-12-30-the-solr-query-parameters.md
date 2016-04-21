@@ -1,6 +1,10 @@
-Title: solr 查询参数说明
-Date: 2011-12-30 18:01:42
-Tags: Solr
+---
+layout: post
+title: solr 查询参数说明
+category: 架构
+date: 2011-12-30 18:01:42
+tags: Solr
+---
 
 
 ##　solr 查询参数说明备忘
@@ -32,6 +36,6 @@ qt - (query type)指定那个类型来处理查询请求，一般不用指定，
 
 ### 其它
 
-indent - 返回的结果是否缩进，默认关闭，用 indent=true|on 开启，一般调试json,php,phps,ruby输出才有必要用这个参数。
+indent - 返回的结果是否缩进，默认关闭，用 `indent=true|on` 开启，一般调试`json`,`php`,`phps`,ruby输出才有必要用这个参数。
 
 version - 查询语法的版本，建议不使用它，由服务器指定默认值。

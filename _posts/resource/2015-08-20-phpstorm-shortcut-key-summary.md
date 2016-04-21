@@ -32,13 +32,17 @@ tags: PHPStorm
     command + ]		跳转到下一个位置
     option + j  多选单个单词，即一次可以对多个同样单词进行修改
 ```
-    
+
 ### 自定义的快捷键：
 
-> 为了和Sublime Text 的快捷键保持一致
+> 为了和Sublime Text、Atom的快捷键保持一致
 
 ```
 	command + o 搜索项目中的类文件
 	command + p 全局文件搜索
-	command + r 查看当前类的文件结构：列出所有的函数
+	command + r 查看当前类的文件结构：列出所有的函数和变量
 ```
+
+### 高阶用法
+
+ * 文件比较： 用Ctrl选择两个文件，然后右键 选 `Compare Files`

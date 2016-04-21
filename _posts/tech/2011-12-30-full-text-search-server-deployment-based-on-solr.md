@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 基于Solr的全文搜索服务器的安装部署
-category: 技术
+category: 架构
 date: 2011-12-30 15:26:36
 tags: Solr
 ---

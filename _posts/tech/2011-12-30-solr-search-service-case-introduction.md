@@ -1,77 +1,76 @@
-Title: 利用solr实现搜索服务的案例介绍
-Date: 2011-12-30 17:59:02
-Tags: Solr
+---
+layout: post
+title: 利用solr实现搜索服务的案例介绍
+category: 架构
+date: 2011-12-30 17:59:02
+tags: Solr
+---
 
 
-本文接着介绍如果使用solr来实现具体应用的搜索服务。 
+本文接着介绍如何使用solr来实现具体应用的搜索服务。
 
-之前介绍了solr全文搜索服务的部署。  以搜索论坛帖子的应用为例（也可理解为是文章系统的案例）  索引结果如下： 
+之前介绍了 [solr全文搜索服务的部署](/2011/12/30/full-text-search-server-deployment-based-on-solr.html)。  以搜索论坛帖子的应用为例（也可理解为是文章系统的案例）  索引结果如下：
 
-字段 说明
+| 字段       | 说明     |
+|:------------- |:-------------|
+| id        | 帖子 id     |
+| user      | 发表用户名或UserId  |
+| title     | 标题    |
+| content   | 内容    |
+| timestamp | 发表时间  |
+| text      | 把标题和内容放到这里，可以用同时搜索这些内容。|
 
-id
-帖子 id
+### 1、配置schema.xml,加入需要被搜索的字段
 
-user
-发表用户名或UserId
+    vim /opt/solr/solr/conf/schema.xml
 
-title
-标题
+查找“<fields>”在其节点内加入如下代码：
 
-content
-内容
 
-timestamp
-发表时间
-
-text
-把标题和内容放到这里，可以用同时搜索这些内容。
-1、配置schema.xml,加入需要被搜索的字段 
-
-> vim /opt/solr/solr/conf/schema.xml
-
-查找“<fields>”在其节点内加入如下代码： 
-    
-    
     <?xml version="1.0" encoding="UTF-8" ?>  
-    
+
     <schema name="example" version="1.3">   
-    
+
      <fields>
        <field name="id" type="sint" indexed="true" stored="true" required="true" />
        <field name="user" type="string" indexed="true" stored="true"/>
        <field name="title" type="text" indexed="true" stored="true"/>
        <field name="content" type="text" indexed="true" stored="true" />
        <field name="timestamp" type="date" indexed="true" stored="true" default="NOW"/>  
-    
+
        <!-- catchall field, containing all other searchable text fields (implemented
             via copyField further on in this schema  -->
        <field name="text" type="text" indexed="true" stored="false" multiValued="true"/>
      </fields>  
-    
+
      <!-- Field to use to determine and enforce document uniqueness.
           Unless this field is marked with required="false", it will be a required field
        -->
      <uniqueKey>id</uniqueKey>  
-    
+
      <!-- field for the QueryParser to use when an explicit fieldname is absent -->
      <defaultSearchField>text</defaultSearchField>  
-    
+
      <!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
      <solrQueryParser defaultOperator="AND"/>  
-    
+
       <!-- copyField commands copy one field to another at the time a document
             is added to the index.  It's used either to index the same field differently,
             or to add multiple fields to the same field for easier/faster searching.  -->
     <!-- -->
        <copyField source="title" dest="text"/>
        <copyField source="content" dest="text"/>  
-    
+
     </schema>
 
-保存后，重启tomcat 2、提交索引到索引库中 首先需要将要搜索的数据转成xml文件格式的，例如实际应用中，需将数据库的数据导出为xml格式。 这里就一个两个现有的xml文件为例，demo-doc1.xml和demo-doc2.xml demo-doc1.xml: 
-    
-    
+保存后，重启tomcat
+
+### 2、提交索引到索引库中
+
+首先需要将要搜索的数据转成xml文件格式的，例如实际应用中，需将数据库的数据导出为xml格式。 这里就一个两个现有的xml文件为例，demo-doc1.xml和demo-doc2.xml
+
+demo-doc1.xml:
+
     <?xml version="1.0" encoding="UTF-8" ?>
     <add>
         <doc>
@@ -82,9 +81,9 @@ text
         </doc>
     </add>
 
-demo-doc2.xml: 
-    
-    
+demo-doc2.xml:
+
+
     <?xml version="1.0" encoding="UTF-8" ?>
     <add>
         <doc>
@@ -103,24 +102,28 @@ demo-doc2.xml:
         </doc>
     </add>
 
-3、提交数据作为索引 
+3、提交数据作为索引
 
-> java -Dauth=username:password  -jar  /opt/solr/post.jar demo-doc1.xml java -Dauth=username:password  -jar  /opt/solr/post.jar demo-doc2.xml
+    java -Dauth=username:password  -jar  /opt/solr/post.jar demo-doc1.xml java -Dauth=username:password  -jar  /opt/solr/post.jar demo-doc2.xml
 
-或者： 
+或者：
 
-> java -Dauth=username:password  -jar  /opt/solr/post.jar demo-doc*.xml
+    java -Dauth=username:password  -jar  /opt/solr/post.jar demo-doc*.xml
 
-或者： 
+或者：
 
-> java -Durl=http://localhost:8983/solr/update -Dcommit=yes -jar post.jar demo-doc*.xml
+    java -Durl=http://localhost:8983/solr/update -Dcommit=yes -jar post.jar demo-doc*.xml
 
-SimplePostTool: version 1.3 SimplePostTool: WARNING: Make sure your XML documents are encoded in UTF-8, other encodings are not currently supported SimplePostTool: POSTing files to http://localhost:8983/solr/update.. SimplePostTool: POSTing file demo-doc1.xml SimplePostTool: POSTing file demo-doc2.xml SimplePostTool: COMMITting Solr index changes.. 注：post.jar 包所在的位置，/解压后的目录/example/exampledocs/post.jar   4、查看搜索结果 http://localhost:8983/solr/select/?q=*%3A*&version=2.2&start=0&rows=10&indent=on 
-    
-    
+> SimplePostTool: version 1.3 SimplePostTool: WARNING: Make sure your XML documents are encoded in UTF-8, other encodings are not currently supported SimplePostTool: POSTing files to http://localhost:8983/solr/update.. SimplePostTool: POSTing file demo-doc1.xml SimplePostTool: POSTing file demo-doc2.xml SimplePostTool: COMMITting Solr index changes.. 注：post.jar 包所在的位置，/解压后的目录/example/exampledocs/post.jar  
+
+### 4、查看搜索结果
+
+访问：`http://localhost:8983/solr/select/?q=*%3A*&version=2.2&start=0&rows=10&indent=on`
+结果：
+
     <?xml version="1.0" encoding="UTF-8"?>
     <response>  
-    
+
     <lst name="responseHeader">
      <int name="status">0</int>
      <int name="QTime">0</int>
@@ -157,4 +160,6 @@ SimplePostTool: version 1.3 SimplePostTool: WARNING: Make sure your XML document
     </result>
     </response>
 
-注：索引文件（默认）会在 CWD/solr/solr/data/index 目录下，其修改的配置文件为：/opt/solr/solr/conf/solrconfig.xml 关于更多的solr查询参数可参见：[solr查询参数说明](//380) 本文没有介绍到中文分词，以后会继续介绍中文分词库的安装和使用以及solr服务器的管理
+注：索引文件（默认）会在 `CWD/solr/solr/data/index` 目录下，其修改的配置文件为：`/opt/solr/solr/conf/solrconfig.xml`
+
+关于更多的solr查询参数可参见：[solr查询参数说明](//380) 本文没有介绍到中文分词，以后会继续介绍中文分词库的安装和使用以及solr服务器的管理
