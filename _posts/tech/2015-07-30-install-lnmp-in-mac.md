@@ -408,7 +408,7 @@ mac不自带mysql，这里需要重新安装，方法依然很简单
 
 加入开机启动
 
-	cp /usr/local/Cellar/memcached/1.4.20/homebrew.mxcl.memcached.plist ~/Library/LaunchAgents/
+	ln -sfv /usr/local/Cellar/memcached/1.4.20/homebrew.mxcl.memcached.plist ~/Library/LaunchAgents/
 
 ## Redis
 
@@ -424,7 +424,7 @@ Redis默认配置文件不允许以Deamon方式运行，因此需要先修改配
 
 加入开机启动
 
-	cp /usr/local/Cellar/redis/2.8.19/homebrew.mxcl.redis.plist ~/Library/LaunchAgents/
+	ln -sfv /usr/local/Cellar/redis/2.8.19/homebrew.mxcl.redis.plist ~/Library/LaunchAgents/
 
 ## 设置别名
 
