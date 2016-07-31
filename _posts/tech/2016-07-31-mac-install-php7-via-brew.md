@@ -19,9 +19,11 @@ tags: PHP7
 	
 ## 配置
 
-	brew tap homebrew/dupes  
-	brew tap homebrew/versions  
- 	brew tap homebrew/homebrew-php
+```
+brew tap homebrew/dupes
+brew tap homebrew/versions  
+brew tap homebrew/homebrew-php
+```
 	
 ## 安装PHP7
 
@@ -56,9 +58,9 @@ brew install php70
 
 ## 配置文件
 
-php.ini	`/usr/local/etc/php/7.0/php.ini `
-php-fpm.conf `/usr/local/etc/php/7.0/php-fpm.conf`
-php, phpize, php-config `ls /usr/local/opt/php70/bin`
+php.ini	`/usr/local/etc/php/7.0/php.ini `  
+php-fpm.conf `/usr/local/etc/php/7.0/php-fpm.conf`  
+php, phpize, php-config `ls /usr/local/opt/php70/bin`  
 php-fpm `/usr/local/opt/php70/sbin/php-fpm`
 
 ## 加入开机启动
@@ -71,9 +73,10 @@ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist
 
 ## 命令行配置
 
-`vim ~/.zshrc` 将  
+`vim ~/.zshrc`   
+将  
 `export PATH="$(brew --prefix php55)/bin:$PATH"`  
- 替换为  
+替换为  
 `export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"`
 
 ```
@@ -84,9 +87,9 @@ alias php-fpm.restart='php-fpm.stop && php-fpm.start'
 修改为   
 
 ```
-101 alias php-fpm.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
-102 alias php-fpm.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
-103 alias php-fpm.restart='php-fpm.stop && php-fpm.start'
+alias php-fpm.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
+alias php-fpm.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
+alias php-fpm.restart='php-fpm.stop && php-fpm.start'
 ```
 
 重新加载配置文件
