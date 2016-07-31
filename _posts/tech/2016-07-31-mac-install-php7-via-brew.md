@@ -6,6 +6,9 @@ category: 技术
 tags: PHP7
 ---
 
+* This will become a table of contents (this text will be scraped).
+{:toc}
+
 最近几年一直在LNMP环境下进行开发，其中的PHP还是5.5版本，有点老旧，去年12月PHP7已经正式发布，新增了一些语法特性，最大的亮点是性能的提升，所以一直想升级到PHP7,由于时间关系一直拖到现在。到写本文为止PHP最新版本为：7.0.9的stable，所以稳定性上基本不用担心。
 
 之前写的 [MAC下安装LNMP环境](/2015/07/30/install-lnmp-in-mac.html) 是用brew安装的，这次升级PHP7继续使用brew, 安装/升级软件很方便。
