@@ -48,15 +48,12 @@ install, but the build may fail or cause obscure side-effects in the
 resulting software.
 ```
 
-根据提示执行： `brew unlink php55`
-
-## 继续安装
-
-```
-brew install php70
-```
+根据提示执行： `brew unlink php55`  
+继续安装: `brew install php70`
 
 ## 配置文件
+
+安装好后生成的配置文件都在 `/usr/local/etc/php/7.0` 目录里，分别如下：  
 
 php.ini	`/usr/local/etc/php/7.0/php.ini `  
 php-fpm.conf `/usr/local/etc/php/7.0/php-fpm.conf`  
@@ -98,7 +95,7 @@ alias php-fpm.restart='php-fpm.stop && php-fpm.start'
 source ~/.zshrc
 ```
 
-## 测试版本
+## 验证版本
 
 PHP版本
 
