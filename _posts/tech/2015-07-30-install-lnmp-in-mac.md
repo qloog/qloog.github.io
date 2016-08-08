@@ -31,7 +31,7 @@ brew（意为酿酒）的命名很有意思，全部都使用了酿酒过程中�
 
 最终编译安装完毕的程序就是一桶酿造好的酒
 
-更详细的信息参考[Homebrew的官方Cookbook](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md)
+更详细的信息参考[Homebrew的官方Cookbook](https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Formula-Cookbook.md)
 
 因此使用Homebrew常见的流程是：
 
