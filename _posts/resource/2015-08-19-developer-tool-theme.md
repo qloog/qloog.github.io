@@ -28,16 +28,17 @@ vim插件挑选：[http://vimawesome.com/](http://vimawesome.com/)
  > 输入主题名直接查看对应主题的截图
 
 
+## PHPStorm
 
-## phpstorm
+[Solarized Dark][https://github.com/jkaving/intellij-colors-solarized](https://github.com/jkaving/intellij-colors-solarized)
+[material-peacock](https://github.com/daylerees/material-peacock)
+[material-theme-jetbrains](https://github.com/ChrisRM/material-theme-jetbrains)
 
-支持2种主题： Solarized Dark 和 Solarized Light
-
-Github: [https://github.com/jkaving/intellij-colors-solarized](https://github.com/jkaving/intellij-colors-solarized)
+更多： [http://daylerees.github.io/](http://daylerees.github.io/)
 
  > 如果想要保持左侧导航和编辑区的风格相同，可安装插件： Color Ide
- 
- 
+
+
 ## highlight.js
 
 demo: [https://highlightjs.org/static/demo/](https://highlightjs.org/static/demo/)
