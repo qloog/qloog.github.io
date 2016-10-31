@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Docker] Dockerfile配置文件详解
+title: [Docker]Dockerfile配置文件详解
 category: 技术
 date: 2016-10-28
 tags: Docker Dockerfile
