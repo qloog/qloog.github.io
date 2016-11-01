@@ -1,6 +1,6 @@
 ---
 layout: post
-title: docker-compose配置文件详解
+title: Docker-compose配置文件详解
 category: 技术
 date: 2016-11-01
 tags: Docker docker-compose
