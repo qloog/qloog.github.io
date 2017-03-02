@@ -97,7 +97,12 @@ Apache的话使用mac自带的基本就够了，我的系统是10.9+，可以使
 	#也可以使用Mac的launchctl来启动|停止
 	launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
 	launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+	
+>> 或者：
 
+	# 
+	brew services start nginx
+	brew services stop nginx
 
 #### Nginx开机启动
 
